@@ -1,39 +1,39 @@
 {
-  "name": "vuejs-remark",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "test:e2e": "vue-cli-service test:e2e",
-    "test:unit": "vue-cli-service test:unit"
-  },
-  "dependencies": {
-    "vue": "^2.5.21",
-    "vue-class-component": "^6.0.0",
-    "vue-property-decorator": "^7.0.0"
-  },
+  "browserslist": [
+    "> 20%"
+  ],
   "devDependencies": {
-    "@types/jest": "^23.1.4",
-    "@vue/cli-plugin-e2e-cypress": "^3.3.0",
-    "@vue/cli-plugin-eslint": "^3.3.0",
-    "@vue/cli-plugin-typescript": "^3.3.0",
-    "@vue/cli-plugin-unit-jest": "^3.3.0",
-    "@vue/cli-service": "^3.3.0",
-    "@vue/eslint-config-prettier": "^4.0.1",
-    "@vue/eslint-config-typescript": "^3.2.0",
-    "@vue/test-utils": "^1.0.0-beta.20",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "lint-staged": "^8.1.0",
-    "ts-jest": "^23.0.0",
-    "typescript": "~3.1.1",
-    "vue-template-compiler": "^2.5.21"
+    "@types/jest": "23.3.13",
+    "@typescript-eslint/parser": "1.1.0",
+    "@vue/cli-plugin-e2e-cypress": "3.3.0",
+    "@vue/cli-plugin-eslint": "3.3.0",
+    "@vue/cli-plugin-typescript": "3.3.0",
+    "@vue/cli-plugin-unit-jest": "3.3.0",
+    "@vue/cli-service": "3.3.1",
+    "@vue/eslint-config-prettier": "4.0.1",
+    "@vue/eslint-config-typescript": "3.2.1",
+    "@vue/test-utils": "1.0.0-beta.28",
+    "babel-eslint": "10.0.1",
+    "eslint": "5.12.1",
+    "eslint-plugin-prettier": "3.0.1",
+    "eslint-plugin-vue": "5.1.0",
+    "lint-staged": "8.1.0",
+    "prettier": "1.16.1",
+    "raw-loader": "1.0.0",
+    "remark": "~10.0.1",
+    "remark-parse": "~6.0.3",
+    "rimraf": "2.6.3",
+    "rollup": "1.1.2",
+    "rollup-plugin-filesize": "6.0.1",
+    "rollup-plugin-typescript2": "0.19.2",
+    "rollup-plugin-vue": "4.6.1",
+    "ts-jest": "23.10.5",
+    "typescript": "3.2.4",
+    "unified": "~7.1.0",
+    "vue": "2.6.0-beta.1",
+    "vue-template-compiler": "2.6.0-beta.1"
   },
   "eslintConfig": {
-    "root": true,
     "env": {
       "node": true
     },
@@ -42,21 +42,15 @@
       "@vue/prettier",
       "@vue/typescript"
     ],
-    "rules": {},
     "parserOptions": {
-      "parser": "typescript-eslint-parser"
-    }
+      "parser": "@typescript-eslint/parser"
+    },
+    "root": true,
+    "rules": {}
   },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
+  "gitHooks": {
+    "pre-commit": "lint-staged"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
   "jest": {
     "moduleFileExtensions": [
       "js",
@@ -66,11 +60,6 @@
       "ts",
       "tsx"
     ],
-    "transform": {
-      "^.+\\.vue$": "vue-jest",
-      ".+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
-      "^.+\\.tsx?$": "ts-jest"
-    },
     "moduleNameMapper": {
       "^@/(.*)$": "<rootDir>/src/$1"
     },
@@ -80,11 +69,14 @@
     "testMatch": [
       "**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)"
     ],
-    "testURL": "http://localhost/"
+    "testURL": "http://localhost/",
+    "transform": {
+      ".+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
+      "^.+\\.tsx?$": "ts-jest",
+      "^.+\\.vue$": "vue-jest"
+    }
   },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
+  "license": "Apache-2.0",
   "lint-staged": {
     "*.js": [
       "vue-cli-service lint",
@@ -94,5 +86,27 @@
       "vue-cli-service lint",
       "git add"
     ]
-  }
+  },
+  "name": "@willsoto/vue-remark",
+  "peerDependencies": {
+    "remark": "~10.0.1",
+    "remark-parse": "~6.0.3",
+    "unified": "~7.1.0",
+    "vue": ">=2.5.22"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "scripts": {
+    "prebuild": "yarn lint && rimraf dist",
+    "build": "rollup --config rollup.config.js",
+    "lint": "vue-cli-service lint",
+    "serve": "vue-cli-service serve",
+    "start": "yarn serve",
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "version": "0.1.0"
 }
