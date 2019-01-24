@@ -1,6 +1,21 @@
 stages:
-  - test
   - build
+  - test
+
+# to cache both npm modules and Cypress binary we use environment variables
+# to point at the folders we can list as paths in "cache" job settings
+variables:
+  npm_config_cache: "$CI_PROJECT_DIR/.npm"
+  CYPRESS_CACHE_FOLDER: "$CI_PROJECT_DIR/cache/Cypress"
+
+# cache using branch name
+# https://gitlab.com/help/ci/caching/index.md
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .npm
+    - cache/Cypress
+    - node_modules
 
 .install:
   before_script:
@@ -19,20 +34,11 @@ stages:
   script:
     - yarn build
 
-# Node Latest
-test-node11:
-  extends: .test
-  image: node:11-alpine
-
-build-node11:
-  extends: .build
-  image: node:11-alpine
-
 # Node LTS
-test-node10:
+test-node-lts:
   extends: .test
-  image: node:10-alpine
+  image: cypress/base:10
 
-build-node10:
+build-node-lts:
   extends: .build
-  image: node:10-alpine
+  image: cypress/base:10
