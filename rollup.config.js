@@ -13,7 +13,6 @@ export default {
     name: "VueRemark",
     sourcemap: true,
     globals: {
-      remark: "remark",
       "remark-parse": "markdown",
       unified: "unified",
       vue: "Vue"
@@ -24,7 +23,7 @@ export default {
        */
       `
   })),
-  external: ["remark", "remark-parse", "unified", "vue"],
+  external: ["remark-parse", "unified", "vue"],
   plugins: [
     typescript({
       clean: true,

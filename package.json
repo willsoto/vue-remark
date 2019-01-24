@@ -20,7 +20,6 @@
     "lint-staged": "8.1.0",
     "prettier": "1.16.1",
     "raw-loader": "1.0.0",
-    "remark": "~10.0.1",
     "remark-parse": "~6.0.3",
     "rimraf": "2.6.3",
     "rollup": "1.1.2",
@@ -90,7 +89,6 @@
   },
   "name": "@willsoto/vue-remark",
   "peerDependencies": {
-    "remark": "~10.0.1",
     "remark-parse": "~6.0.3",
     "unified": "~7.1.0",
     "vue": ">=2.5.22"

@@ -1,21 +1,16 @@
-import * as markdown from "remark-parse";
-import * as unified_ from "unified";
+import markdown from "remark-parse";
+import unified from "unified";
 import Unist from "unist";
 import Vue, { CreateElement, PropType, VNode, VNodeData } from "vue";
 import { defaultRenderers, getChildren } from "./renderers";
 import { VueRemark } from "./types";
-
-// Hack for these issues:
-// https://github.com/rollup/rollup-plugin-typescript/issues/76
-// https://github.com/rollup/rollup-plugin-typescript/issues/68
-let unified = unified_;
 
 export default Vue.extend({
   name: "vue-remark",
   props: {
     parser: {
       // @ts-ignore
-      type: Function as PropType<unified_.Processor>,
+      type: Function as PropType<unified.Processor>,
       required: false,
       default: unified()
     },
@@ -29,7 +24,7 @@ export default Vue.extend({
       default: false
     },
     plugins: {
-      type: Array as PropType<unified_.PluginTuple[]>,
+      type: Array as PropType<unified.PluginTuple[]>,
       required: false,
       default() {
         return [];
@@ -49,7 +44,7 @@ export default Vue.extend({
     plugins.forEach((plugin) => this.applyParserPlugin(this.parser, plugin));
   },
   methods: {
-    applyParserPlugin(parser: unified_.Processor, plugin: Plugin) {
+    applyParserPlugin(parser: unified.Processor, plugin: Plugin) {
       // Not sure why the tuple won't spread correctly...todo
       // https://github.com/Microsoft/TypeScript/pull/24897
       // @ts-ignore

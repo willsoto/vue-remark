@@ -7,6 +7,3 @@ declare module "*.md" {
   const content: string;
   export default content;
 }
-
-declare module "remark";
-declare module "remark-parse";
