@@ -1,0 +1,37 @@
+stages:
+  - test
+  - build
+
+.install:
+  before_script:
+    - yarn install
+
+test-node11:
+  extends: .install
+  image: node:11-alpine
+  stage: test
+  script:
+    - yarn test:unit
+    - yarn test:e2e
+
+build-node11:
+  extends: .install
+  image: node:11-alpine
+  stage: build
+  script:
+    - yarn build
+
+test-node10:
+  extends: .install
+  image: node:10-alpine
+  stage: test
+  script:
+    - yarn test:unit
+    - yarn test:e2e
+
+build-node10:
+  extends: .install
+  image: node:10-alpine
+  stage: build
+  script:
+    - yarn build
