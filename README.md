@@ -1,39 +1,49 @@
-# vuejs-remark
+# Vue Remark
 
-## Project setup
-```
-yarn install
-```
+[![pipeline status](https://gitlab.com/willsoto/vue-remark/badges/master/pipeline.svg)](https://gitlab.com/willsoto/vue-remark/commits/master)
+[![coverage report](https://gitlab.com/willsoto/vue-remark/badges/master/coverage.svg)](https://gitlab.com/willsoto/vue-remark/commits/master)
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+> Heavily inspired by [React Markdown](https://github.com/rexxars/react-markdown)
 
-### Compiles and minifies for production
-```
-yarn run build
+## Installation
+
+```bash
+yarn add @willsoto/vue-remark remark-parse unified
 ```
 
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
+```bash
+npm install @willsoto/vue-remark remark-parse unified
 ```
 
-### Run your end-to-end tests
-```
-yarn run test:e2e
+```js
+import VueRemark from "@willsoto/vue-remark";
+
+export default {
+  components: {
+    VueRemark
+  }
+};
 ```
 
-### Run your unit tests
-```
-yarn run test:unit
+## Example
+
+```html
+<template>
+  <vue-remark :source="source" />
+</template>
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```js
+import VueRemark from "@willsoto/vue-remark";
+
+export default {
+  components: {
+    VueRemark
+  },
+  data() {
+    return {
+      source: "# Some heading"
+    };
+  }
+};
+```
