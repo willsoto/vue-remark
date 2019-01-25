@@ -25,7 +25,7 @@ cache:
   extends: .install
   stage: test
   script:
-    - yarn test:unit
+    - yarn test:unit --coverage
     - yarn test:e2e --headless
 
 .build:

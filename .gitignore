@@ -22,3 +22,5 @@ yarn-error.log*
 *.sln
 *.sw*
 .rpt2_cache
+
+/coverage
