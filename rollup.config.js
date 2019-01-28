@@ -13,17 +13,31 @@ export default {
     name: "VueRemark",
     sourcemap: true,
     globals: {
+      "lodash.flatmap": "flatMap",
+      "lodash.get": "get",
       "remark-parse": "markdown",
       unified: "unified",
-      vue: "Vue"
+      vue: "Vue",
+      "vue-class-component": "Component"
     },
     banner: `
       /**
+       *
+       * Vue Remark
        * ${pkg.name}@${pkg.version}
+       * ${pkg.license}
+       *
        */
       `
   })),
-  external: ["remark-parse", "unified", "vue"],
+  external: [
+    "lodash.flatmap",
+    "lodash.get",
+    "remark-parse",
+    "unified",
+    "vue",
+    "vue-class-component"
+  ],
   plugins: [
     typescript({
       clean: true,

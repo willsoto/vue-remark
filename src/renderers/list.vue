@@ -1,21 +1,32 @@
 <template>
-  <component :is="listType">
+  <component :is="listType" :start="start">
     <slot></slot>
   </component>
 </template>
 
 <script lang="ts">
-import Vue, { VueConstructor } from "vue";
-import * as Unist from "unist";
-import { VueRemark } from "../types";
-import { Base } from "./base";
+import Vue from "vue";
+import Component from "vue-class-component";
 
-export default Base.extend({
+@Component({
   name: "vue-remark-list",
-  computed: {
-    listType(): string {
-      return this.node.ordered ? "ol" : "ul";
+  props: {
+    ordered: {
+      type: Boolean,
+      required: true
+    },
+    start: {
+      type: Number,
+      required: false
     }
   }
-});
+})
+export default class VueRemarkList extends Vue {
+  ordered!: boolean;
+  start!: number;
+
+  get listType(): string {
+    return this.ordered ? "ol" : "ul";
+  }
+}
 </script>

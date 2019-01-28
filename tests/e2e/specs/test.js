@@ -4,6 +4,6 @@ describe("Renders markdown", () => {
   });
 
   it("h1", () => {
-    cy.contains("h1", "Heading 1");
+    cy.contains("h1", "h1 Heading");
   });
 });

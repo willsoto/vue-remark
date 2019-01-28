@@ -3,26 +3,37 @@
 </template>
 
 <script lang="ts">
-import Vue, { VueConstructor } from "vue";
-import * as Unist from "unist";
-import { VueRemark } from "../types";
-import { Base } from "./base";
+import Vue from "vue";
+import Component from "vue-class-component";
+import Unist from "unist";
 
-export default Base.extend({
+@Component({
   name: "vue-remark-html",
-  computed: {
-    isBlock(): boolean {
-      const { position } = this.node;
-
-      if (!position) {
-        return true;
-      }
-
-      return position.start.line === position.end.line;
+  props: {
+    position: {
+      type: Object,
+      required: true
     },
-    element(): string {
-      return this.isBlock ? "div" : "span";
+    value: {
+      type: String,
+      required: true
     }
   }
-});
+})
+export default class VueRemarkHtml extends Vue {
+  position!: Unist.Position;
+  value!: string;
+
+  get isBlock(): boolean {
+    if (!this.position) {
+      return true;
+    }
+
+    return this.position.start.line === this.position.end.line;
+  }
+
+  get element(): string {
+    return this.isBlock ? "div" : "span";
+  }
+}
 </script>

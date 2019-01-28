@@ -4,6 +4,8 @@
   ],
   "devDependencies": {
     "@types/jest": "23.3.13",
+    "@types/lodash.flatmap": "4.5.4",
+    "@types/lodash.get": "4.4.4",
     "@typescript-eslint/parser": "1.1.0",
     "@vue/cli-plugin-e2e-cypress": "3.3.0",
     "@vue/cli-plugin-eslint": "3.3.0",
@@ -17,7 +19,7 @@
     "eslint": "5.12.1",
     "eslint-plugin-prettier": "3.0.1",
     "eslint-plugin-vue": "5.1.0",
-    "lint-staged": "8.1.0",
+    "lint-staged": "8.1.1",
     "prettier": "1.16.1",
     "raw-loader": "1.0.0",
     "remark-parse": "~6.0.3",
@@ -29,9 +31,10 @@
     "standard-version": "4.4.0",
     "ts-jest": "23.10.5",
     "typescript": "3.2.4",
-    "unified": "~7.1.0",
-    "vue": "2.6.0-beta.1",
-    "vue-template-compiler": "2.6.0-beta.1"
+    "unified": "7.1.0",
+    "vue": "2.6.0-beta.2",
+    "vue-class-component": "6.3.2",
+    "vue-template-compiler": "2.6.0-beta.2"
   },
   "eslintConfig": {
     "env": {
@@ -104,10 +107,15 @@
     "lint": "vue-cli-service lint",
     "prerelease": "yarn build",
     "release": "standard-version --sign",
+    "postrelease": "git push --follow-tags --push-option ci.skip",
     "serve": "vue-cli-service serve",
     "start": "yarn serve",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"
   },
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "dependencies": {
+    "lodash.flatmap": "4.5.0",
+    "lodash.get": "4.4.2"
+  }
 }

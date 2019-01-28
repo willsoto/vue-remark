@@ -5,12 +5,11 @@
 </template>
 
 <script lang="ts">
-import Vue, { VueConstructor } from "vue";
-import * as Unist from "unist";
-import { VueRemark } from "../types";
-import { Base } from "./base";
+import Vue from "vue";
+import Component from "vue-class-component";
 
-export default Base.extend({
+@Component({
   name: "vue-remark-root"
-});
+})
+export default class VueRemarkRoot extends Vue {}
 </script>

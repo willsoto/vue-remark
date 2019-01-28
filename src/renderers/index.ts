@@ -1,43 +1,37 @@
-import { VueRemark } from "../types";
-/**
- * Import renderers
- */
-import CodeBlock from "./code-block.vue";
-import Heading from "./heading.vue";
-import Html from "./html.vue";
-import InlineCode from "./inline-code.vue";
-import ListItem from "./list-item.vue";
-import List from "./list.vue";
-import Root from "./root.vue";
-import Text from "./text.vue";
+import { Renderers } from "../types";
+import VueRemarkCodeBlock from "./code-block.vue";
+import VueRemarkHeading from "./heading.vue";
+import VueRemarkHtml from "./html.vue";
+import VueRemarkInlineCode from "./inline-code.vue";
+import VueRemarkListItem from "./list-item.vue";
+import VueRemarkList from "./list.vue";
+import VueRemarkRoot from "./root.vue";
+import VueRemarkText from "./text.vue";
 
-export * from "./helpers";
-export const defaultRenderers: VueRemark.Renderers = {
-  break: "br",
-  paragraph: "p",
-  emphasis: "em",
-  strong: "strong",
-  thematicBreak: "hr",
+export const defaultRenderers: Renderers = {
   blockquote: "blockquote",
+  break: "br",
+  code: VueRemarkCodeBlock,
+  definition() {},
   delete: "del",
-  link: "a",
+  emphasis: "em",
+  heading: VueRemarkHeading,
+  html: VueRemarkHtml,
   image: "img",
-  linkReference: "a",
   imageReference: "img",
+  inlineCode: VueRemarkInlineCode,
+  link: "a",
+  linkReference: "a",
+  list: VueRemarkList,
+  listItem: VueRemarkListItem,
+  paragraph: "p",
+  root: VueRemarkRoot,
+  strong: "strong",
   table: "table",
-  tableHead: "thead",
   tableBody: "tbody",
-  tableRow: "tr",
   tableCell: "td",
-
-  root: Root,
-  text: Text,
-  list: List,
-  listItem: ListItem,
-  heading: Heading,
-  inlineCode: InlineCode,
-  code: CodeBlock,
-  html: Html
-  // virtualHtml: VirtualHtml,
-  // parsedHtml: ParsedHtml
+  tableHead: "thead",
+  tableRow: "tr",
+  text: VueRemarkText,
+  thematicBreak: "hr"
 };

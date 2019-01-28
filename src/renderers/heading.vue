@@ -5,19 +5,23 @@
 </template>
 
 <script lang="ts">
-import Vue, { VueConstructor } from "vue";
-import * as Unist from "unist";
-import { VueRemark } from "../types";
-import { Base } from "./base";
+import Vue from "vue";
+import Component from "vue-class-component";
 
-export default Base.extend({
+@Component({
   name: "vue-remark-heading",
-  computed: {
-    level(): string {
-      const { depth } = this.options.node;
-
-      return "h" + depth;
+  props: {
+    depth: {
+      type: Number,
+      required: true
     }
   }
-});
+})
+export default class VueRemarkHeading extends Vue {
+  depth!: number;
+
+  get level() {
+    return "h" + this.depth;
+  }
+}
 </script>

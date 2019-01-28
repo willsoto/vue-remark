@@ -1,14 +1,19 @@
 <template>
-  <code>{{ value }}</code>
+  <code>{{ value }}<slot></slot></code>
 </template>
 
 <script lang="ts">
-import Vue, { VueConstructor } from "vue";
-import * as Unist from "unist";
-import { VueRemark } from "../types";
-import { Base } from "./base";
+import Vue from "vue";
+import Component from "vue-class-component";
 
-export default Base.extend({
-  name: "vue-remark-inline-code"
-});
+@Component({
+  name: "vue-remark-inline-code",
+  props: {
+    value: {
+      type: String,
+      required: true
+    }
+  }
+})
+export default class VueRemarkInlineCode extends Vue {}
 </script>
