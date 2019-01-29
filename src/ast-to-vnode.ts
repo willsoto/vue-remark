@@ -132,9 +132,7 @@ function getNodeData(
       break;
     case "listItem":
       nodeData.props.checked = node.checked;
-      nodeData.props.tight = !node.loose;
-      nodeData.props.ordered = node.ordered;
-      nodeData.props.index = node.index;
+      nodeData.props.loose = node.loose;
 
       children = getListItemChildren(node, parent).map((childNode, idx) => {
         return astToVNode(

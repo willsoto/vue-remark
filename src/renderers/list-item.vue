@@ -1,5 +1,6 @@
 <template>
   <li>
+    <input v-if="isCheckbox" type="checkbox" readonly />
     <slot></slot>
   </li>
 </template>
@@ -9,7 +10,29 @@ import Vue from "vue";
 import Component from "vue-class-component";
 
 @Component({
-  name: "vue-remark-list-item"
+  name: "vue-remark-list-item",
+  props: {
+    checked: {
+      type: Boolean,
+      required: false
+    },
+    loose: {
+      type: Boolean,
+      required: false
+    },
+    ordered: {
+      type: Boolean,
+      required: false
+    }
+  }
 })
-export default class VueRemarkListItem extends Vue {}
+export default class VueRemarkListItem extends Vue {
+  checked!: boolean | null;
+  loose!: boolean | null;
+  ordered!: boolean | null;
+
+  get isCheckbox(): boolean {
+    return this.checked !== null;
+  }
+}
 </script>

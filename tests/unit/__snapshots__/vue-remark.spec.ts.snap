@@ -31,39 +31,62 @@ exports[`VueRemark snapshot 1`] = `
   <h2>Lists</h2>
   <p>Unordered</p>
   <ul>
-    <li>Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li>
-    <li>Sub-lists are made by indenting 2 spaces:<ul>
-        <li>Marker character change forces new list start:<ul>
-            <li>Ac tristique libero volutpat at</li>
+    <li>
+      <!----> Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li>
+    <li>
+      <!----> Sub-lists are made by indenting 2 spaces:<ul>
+        <li>
+          <!----> Marker character change forces new list start:<ul>
+            <li>
+              <!----> Ac tristique libero volutpat at</li>
           </ul>
           <ul>
-            <li>Facilisis in pretium nisl aliquet</li>
+            <li>
+              <!----> Facilisis in pretium nisl aliquet</li>
           </ul>
           <ul>
-            <li>Nulla volutpat aliquam velit</li>
+            <li>
+              <!----> Nulla volutpat aliquam velit</li>
           </ul>
         </li>
       </ul>
     </li>
-    <li>Very easy!</li>
+    <li>
+      <!----> Very easy!</li>
   </ul>
   <p>Ordered</p>
   <ol start="1">
-    <li>Lorem ipsum dolor sit amet</li>
-    <li>Consectetur adipiscing elit</li>
-    <li>Integer molestie lorem at massa</li>
+    <li>
+      <!----> Lorem ipsum dolor sit amet</li>
+    <li>
+      <!----> Consectetur adipiscing elit</li>
+    <li>
+      <!----> Integer molestie lorem at massa</li>
   </ol>
   <p>1) You can use sequential numbers...
     1) ...or keep all the numbers as <code>1.</code></p>
   <p>Start numbering with offset:</p>
   <ol start="57">
-    <li>foo</li>
-    <li>bar</li>
+    <li>
+      <!----> foo</li>
+    <li>
+      <!----> bar</li>
   </ol>
   <p>Loose lists?</p>
   <ul>
-    <li>foo</li>
-    <li>bar</li>
+    <li>
+      <!----> foo</li>
+    <li>
+      <!----> bar</li>
+  </ul>
+  <p>Checkboxes</p>
+  <ul>
+    <li><input type="checkbox" readonly="readonly"> foo<ul>
+        <li><input type="checkbox" readonly="readonly"> bar</li>
+        <li><input type="checkbox" readonly="readonly"> baz</li>
+      </ul>
+    </li>
+    <li><input type="checkbox" readonly="readonly"> bim</li>
   </ul>
   <h2>Code</h2>
   <p>Inline <code>code</code></p>

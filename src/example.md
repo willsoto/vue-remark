@@ -70,6 +70,13 @@ Loose lists?
 
 - bar
 
+Checkboxes
+
+- [x] foo
+  - [ ] bar
+  - [x] baz
+- [ ] bim
+
 ## Code
 
 Inline `code`
