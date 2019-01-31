@@ -123,5 +123,5 @@
     "typings": "tsc --project tsconfig.build.json --declaration --declarationDir typings --emitDeclarationOnly"
   },
   "typings": "./typings/vue-remark.d.ts",
-  "version": "0.3.1"
+  "version": "0.3.2"
 }
