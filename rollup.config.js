@@ -1,5 +1,5 @@
 const filesize = require("rollup-plugin-filesize");
-const typescript = require("rollup-plugin-typescript2");
+const typescript = require("rollup-plugin-typescript");
 const vue = require("rollup-plugin-vue");
 const pkg = require("./package.json");
 
@@ -34,8 +34,6 @@ export default {
   external: Object.keys(globals),
   plugins: [
     typescript({
-      clean: true,
-      objectHashIgnoreUnknownHack: true,
       tsconfig: "./tsconfig.build.json"
     }),
     vue(),

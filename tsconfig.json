@@ -2,7 +2,7 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
-    "declaration": true,
+    "declaration": false,
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "importHelpers": true,
@@ -11,7 +11,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["lib/*"]
     },
     "sourceMap": true,
     "strict": true,
@@ -19,5 +19,11 @@
     "types": ["webpack-env", "jest"]
   },
   "exclude": ["node_modules"],
-  "include": ["src/**/*.ts", "src/**/*.vue", "tests/**/*.spec.ts"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.vue",
+    "lib/**/*.ts",
+    "lib/**/*.vue",
+    "tests/**/*.spec.ts"
+  ]
 }

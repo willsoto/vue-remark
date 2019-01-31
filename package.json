@@ -26,10 +26,11 @@
     "rimraf": "2.6.3",
     "rollup": "1.1.2",
     "rollup-plugin-filesize": "6.0.1",
-    "rollup-plugin-typescript2": "0.19.2",
+    "rollup-plugin-typescript": "1.0.0",
     "rollup-plugin-vue": "4.6.1",
     "standard-version": "4.4.0",
     "ts-jest": "23.10.5",
+    "tslib": "1.9.3",
     "typescript": "3.2.4",
     "unified": "7.1.0",
     "vue": "2.6.0-beta.2",
@@ -114,7 +115,8 @@
     "serve": "vue-cli-service serve",
     "start": "yarn serve",
     "test:e2e": "vue-cli-service test:e2e",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "typings": "tsc --project tsconfig.build.json --declaration --declarationDir typings --emitDeclarationOnly"
   },
   "version": "0.2.0",
   "dependencies": {
