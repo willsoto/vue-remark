@@ -58,7 +58,8 @@
   },
   "files": [
     "lib",
-    "dist"
+    "dist",
+    "typings"
   ],
   "gitHooks": {
     "pre-commit": "lint-staged"
