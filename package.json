@@ -113,7 +113,7 @@
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "dependencies": {
     "lodash.flatmap": "4.5.0",
     "lodash.get": "4.4.2"
