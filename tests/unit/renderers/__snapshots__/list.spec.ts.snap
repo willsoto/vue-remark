@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VueRemarkList snapshot (ordered) 1`] = `
+<ol>
+  <li>some list item</li>
+</ol>
+`;
+
+exports[`VueRemarkList snapshot (unordered) 1`] = `
+<ul>
+  <li>some list item</li>
+</ul>
+`;

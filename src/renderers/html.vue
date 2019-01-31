@@ -12,7 +12,10 @@ import Unist from "unist";
   props: {
     position: {
       type: Object,
-      required: true
+      required: false,
+      default() {
+        return {};
+      }
     },
     value: {
       type: String,
@@ -25,7 +28,7 @@ export default class VueRemarkHtml extends Vue {
   value!: string;
 
   get isBlock(): boolean {
-    if (!this.position) {
+    if (Object.keys(this.position).length === 0) {
       return true;
     }
 

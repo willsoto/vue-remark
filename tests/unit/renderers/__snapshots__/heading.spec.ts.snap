@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VueRemarkHeading snapshot 1`] = `<h2>Heading 2</h2>`;

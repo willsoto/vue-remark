@@ -1,0 +1,6 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VueRemarkCodeBlock snapshot 1`] = `
+<pre>  <code class="language-js">import foo from 'bar';</code>
+</pre>
+`;

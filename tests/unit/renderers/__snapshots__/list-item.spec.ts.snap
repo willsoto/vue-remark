@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VueRemarkListItem when checkboxes 1`] = `<li><input type="checkbox" readonly="readonly"> </li>`;
+
+exports[`VueRemarkListItem when regular list items 1`] = `
+<li>
+  <!---->
+</li>
+`;
