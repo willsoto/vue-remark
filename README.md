@@ -8,11 +8,11 @@
 ## Installation
 
 ```bash
-yarn add @willsoto/vue-remark remark-parse unified
+yarn add @willsoto/vue-remark
 ```
 
 ```bash
-npm install @willsoto/vue-remark remark-parse unified
+npm install @willsoto/vue-remark
 ```
 
 ```js
