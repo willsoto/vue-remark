@@ -41,7 +41,8 @@ export default {
   plugins: [
     typescript({
       clean: true,
-      objectHashIgnoreUnknownHack: true
+      objectHashIgnoreUnknownHack: true,
+      tsconfig: "./tsconfig.build.json"
     }),
     vue(),
     filesize()
