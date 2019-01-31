@@ -2,6 +2,11 @@
   "browserslist": [
     "> 20%"
   ],
+  "dependencies": {
+    "lodash.flatmap": "4.5.0",
+    "lodash.get": "4.4.2",
+    "vue-class-component": "6.3.2"
+  },
   "devDependencies": {
     "@types/jest": "23.3.13",
     "@types/lodash.flatmap": "4.5.4",
@@ -106,22 +111,18 @@
     }
   },
   "scripts": {
-    "prebuild": "yarn lint && rimraf dist",
     "build": "rollup --config rollup.config.js",
     "lint": "vue-cli-service lint",
-    "prerelease": "yarn build",
-    "release": "standard-version --sign",
     "postrelease": "git push --follow-tags origin master",
+    "prebuild": "yarn lint && rimraf dist",
+    "prerelease": "yarn build && yarn typings",
+    "release": "standard-version --sign",
     "serve": "vue-cli-service serve",
     "start": "yarn serve",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
     "typings": "tsc --project tsconfig.build.json --declaration --declarationDir typings --emitDeclarationOnly"
   },
-  "version": "0.2.0",
-  "dependencies": {
-    "lodash.flatmap": "4.5.0",
-    "lodash.get": "4.4.2",
-    "vue-class-component": "6.3.2"
-  }
+  "typings": "./typings/vue-remark.d.ts",
+  "version": "0.2.0"
 }
