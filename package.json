@@ -107,7 +107,7 @@
     "lint": "vue-cli-service lint",
     "prerelease": "yarn build",
     "release": "standard-version --sign",
-    "postrelease": "git push --follow-tags --push-option ci.skip",
+    "postrelease": "git push --follow-tags origin master",
     "serve": "vue-cli-service serve",
     "start": "yarn serve",
     "test:e2e": "vue-cli-service test:e2e",
