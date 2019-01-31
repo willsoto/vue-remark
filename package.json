@@ -51,6 +51,10 @@
     "root": true,
     "rules": {}
   },
+  "files": [
+    "src",
+    "dist"
+  ],
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
