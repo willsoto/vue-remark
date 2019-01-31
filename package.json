@@ -33,7 +33,6 @@
     "typescript": "3.2.4",
     "unified": "7.1.0",
     "vue": "2.6.0-beta.2",
-    "vue-class-component": "6.3.2",
     "vue-template-compiler": "2.6.0-beta.2"
   },
   "eslintConfig": {
@@ -52,7 +51,7 @@
     "rules": {}
   },
   "files": [
-    "src",
+    "lib",
     "dist"
   ],
   "gitHooks": {
@@ -68,7 +67,7 @@
       "tsx"
     ],
     "moduleNameMapper": {
-      "^@/(.*)$": "<rootDir>/src/$1"
+      "^@/(.*)$": "<rootDir>/lib/$1"
     },
     "snapshotSerializers": [
       "jest-serializer-vue"
@@ -120,6 +119,7 @@
   "version": "0.2.0",
   "dependencies": {
     "lodash.flatmap": "4.5.0",
-    "lodash.get": "4.4.2"
+    "lodash.get": "4.4.2",
+    "vue-class-component": "6.3.2"
   }
 }

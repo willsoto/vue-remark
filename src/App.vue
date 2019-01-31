@@ -6,7 +6,7 @@
 import Vue, { VueConstructor } from "vue";
 
 import example from "./example.md";
-import VueRemark from "./vue-remark";
+import VueRemark from "../dist/VueRemark.umd.js";
 
 export default Vue.extend({
   name: "app",

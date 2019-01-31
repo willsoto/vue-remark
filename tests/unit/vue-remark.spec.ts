@@ -1,7 +1,7 @@
+import VueRemark from "@/vue-remark";
 import { mount } from "@vue/test-utils";
 import fs from "fs";
 import path from "path";
-import VueRemark from "../../src/vue-remark";
 
 const pathToExample = path.join(__dirname, "..", "..", "src", "example.md");
 const exampleMarkdown = fs.readFileSync(pathToExample, {

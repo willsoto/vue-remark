@@ -4,22 +4,23 @@ const vue = require("rollup-plugin-vue");
 const pkg = require("./package.json");
 
 const formats = ["umd", "esm", "cjs"];
+const globals = {
+  "lodash.flatmap": "flatMap",
+  "lodash.get": "get",
+  "remark-parse": "markdown",
+  unified: "unified",
+  vue: "Vue",
+  "vue-class-component": "Component"
+};
 
 export default {
-  input: "src/vue-remark.ts",
+  input: "lib/vue-remark.ts",
   output: formats.map((format) => ({
     file: `dist/VueRemark.${format}.js`,
     format: format,
     name: "VueRemark",
     sourcemap: true,
-    globals: {
-      "lodash.flatmap": "flatMap",
-      "lodash.get": "get",
-      "remark-parse": "markdown",
-      unified: "unified",
-      vue: "Vue",
-      "vue-class-component": "Component"
-    },
+    globals: globals,
     banner: `
       /**
        *
@@ -30,14 +31,7 @@ export default {
        */
       `
   })),
-  external: [
-    "lodash.flatmap",
-    "lodash.get",
-    "remark-parse",
-    "unified",
-    "vue",
-    "vue-class-component"
-  ],
+  external: Object.keys(globals),
   plugins: [
     typescript({
       clean: true,
