@@ -213,10 +213,6 @@ function getListItemChildren(node: Node, parent?: Parent) {
     return node.children;
   }
 
-  return unwrapParagraphs(node);
-}
-
-function unwrapParagraphs(node: Node): Node[] {
   return flatMap(node.children, (child) => {
     if (child.type === "paragraph") {
       return child.children || [];
