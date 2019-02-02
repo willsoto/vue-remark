@@ -23,10 +23,6 @@ import { Node, Renderers } from "./types";
     renderers: {
       type: Object,
       required: false
-    },
-    skipHtml: {
-      type: Boolean,
-      required: false
     }
   }
 })
@@ -37,7 +33,6 @@ export default class VueRemark extends Vue {
   source!: string;
   plugins!: unified.PluginTuple[];
   renderers!: Renderers;
-  skipHtml!: boolean;
 
   get ast(): Node {
     return (this.parser.parse(this.source) as unknown) as Node;
