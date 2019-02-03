@@ -47,3 +47,39 @@ export default {
   }
 };
 ```
+
+## Options
+
+| Name      | Type   | Required |
+| --------- | ------ | -------- |
+| source    | String | true     |
+| plugins   | Array  | false    |
+| renderers | Object | false    |
+
+## Node Types
+
+- `blockquote`
+- `break`
+- `code`
+- `definition` (not rendered by default)
+- `delete`
+- `emphasis`
+- `heading`
+- `html`
+- `image`
+- `imageReference`
+- `inlineCode`
+- `link`
+- `linkReference`
+- `list`
+- `listItem`
+- `paragraph`
+- `root`
+- `strong`
+- `table`
+- `tableBody`
+- `tableCell`
+- `tableHead`
+- `tableRow`
+- `text`
+- `thematicBreak`
