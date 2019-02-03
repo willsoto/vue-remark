@@ -164,7 +164,7 @@ console.log(foo(5));</code>
 </div>
 `;
 
-exports[`VueRemark when providing plugins correctly applies them 1`] = `
+exports[`VueRemark when providing plugins and renderers correctly applies them 1`] = `
 <div>
   <h3>Using Shortcodes</h3>
   <div id="chfk2">MailchimpForm</div>
