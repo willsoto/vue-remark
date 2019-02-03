@@ -103,6 +103,12 @@ function getNodeData(
     case "root":
     case "text":
     case "inlineCode":
+    case "thematicBreak":
+    case "paragraph":
+    case "strong":
+    case "emphasis":
+    case "delete":
+    case "blockquote":
       break;
     case "html":
       nodeData.props.position = node.position;
@@ -178,6 +184,9 @@ function getNodeData(
         "columnAlignment",
         index
       ]);
+      break;
+    default:
+      nodeData.props.node = node;
       break;
   }
 

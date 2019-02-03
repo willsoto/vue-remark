@@ -45,7 +45,7 @@ export default class VueRemark extends Vue {
     };
   }
 
-  created() {
+  beforeMount() {
     this.initializePlugins();
   }
 

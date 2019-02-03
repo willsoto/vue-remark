@@ -154,19 +154,6 @@ can be useful too.
 
 Some characters, like &aelig;, &amp; and similar should be handled properly.
 
-## HTML
+### Using Shortcodes
 
-Does anyone actually like the fact that you can embed HTML in markdown?
-
-<div>
-  <p>Inline HTML</p>
-</div>
-
-We used to have a known bug where inline HTML wasn't handled well. You can do basic tags like
-<code>code</code>, as long as it doesn't contain any <span class="attrs">attributes</span>. If you
-have weird ordering on your tags, it won't work either. It does support <strong>nested
-<em>tags</em>, however</strong>. And with the <code class="name">html-parser</code> plugin, it can now properly handle HTML! Which is pretty sweet.
-
-<hr /><hr />
-
-Cool, eh?
+{{> MailchimpForm id="chfk2" <}}
