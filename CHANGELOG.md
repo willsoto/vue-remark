@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/willsoto/vue-remark/compare/v0.3.2...v0.4.0) (2019-02-03)
+
+
+### Bug Fixes
+
+* add rollup-plugin-commonjs to deal with es2015 exports ([07a0715](https://github.com/willsoto/vue-remark/commit/07a0715))
+* remove duplicate typings ([149c874](https://github.com/willsoto/vue-remark/commit/149c874))
+
+
+### Features
+
+* add examples and tests for custom plugins and renderers ([a6c2b13](https://github.com/willsoto/vue-remark/commit/a6c2b13))
+* **actions:** add main.workflow ([64ca21c](https://github.com/willsoto/vue-remark/commit/64ca21c))
+
+
+
 <a name="0.3.2"></a>
 ## [0.3.2](https://github.com/willsoto/vue-remark/compare/v0.3.1...v0.3.2) (2019-01-31)
 
