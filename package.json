@@ -10,7 +10,7 @@
     "vue-class-component": "6.3.2"
   },
   "devDependencies": {
-    "@types/jest": "23.3.13",
+    "@types/jest": "24.0.0",
     "@types/lodash.flatmap": "4.5.4",
     "@types/lodash.get": "4.4.4",
     "@typescript-eslint/parser": "1.2.0",
@@ -40,8 +40,8 @@
     "ts-jest": "23.10.5",
     "tslib": "1.9.3",
     "typescript": "3.3.1",
-    "vue": "2.6.0-beta.2",
-    "vue-template-compiler": "2.6.0-beta.2"
+    "vue": "2.6.1",
+    "vue-template-compiler": "2.6.1"
   },
   "eslintConfig": {
     "env": {
