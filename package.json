@@ -41,7 +41,7 @@
     "tslib": "1.9.3",
     "typescript": "3.3.1",
     "vue": "2.6.4",
-    "vue-template-compiler": "2.6.3"
+    "vue-template-compiler": "2.6.4"
   },
   "eslintConfig": {
     "env": {
