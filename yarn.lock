@@ -217,10 +217,10 @@
   resolved "https://registry.npmjs.org/@types/jquery/-/jquery-3.3.6.tgz#5932ead926307ca21e5b36808257f7c926b06565"
   integrity sha512-403D4wN95Mtzt2EoQHARf5oe/jEPhzBOBNrunk+ydQGW8WmkQ/E8rViRAEB1qEt/vssfGfNVD6ujP4FVeegrLg==
 
-"@types/lodash.flatmap@4.5.4":
-  version "4.5.4"
-  resolved "https://registry.npmjs.org/@types/lodash.flatmap/-/lodash.flatmap-4.5.4.tgz#b0334841bcff9b775f1749fd8813b15be82e0d31"
-  integrity sha512-63VWczTPv07RLa+ceCEDeg+J/X/233ZY/hTqgXmD933LTzHPloRISvfawUfRKUQ47KnGeCtBvV7CShmh1sjBsw==
+"@types/lodash.flatmap@4.5.5":
+  version "4.5.5"
+  resolved "https://registry.yarnpkg.com/@types/lodash.flatmap/-/lodash.flatmap-4.5.5.tgz#b83a4c3ec34ba639682511774a3f9493bd8b77f0"
+  integrity sha512-PBaTMJEYPRpmk6/7pQ7sdC2kTW365YHfheYzdAlQFZZWSLmIg1rJc4DNtV9GP3g9disYyEo0A+SE9RsNzyLlZQ==
   dependencies:
     "@types/lodash" "*"
 
