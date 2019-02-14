@@ -200,10 +200,17 @@
   resolved "https://registry.npmjs.org/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
   integrity sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==
 
-"@types/jest@24.0.3":
-  version "24.0.3"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-24.0.3.tgz#df8dc56565bd2d27fcbd099434f04f9891e16ab7"
-  integrity sha512-keRxrIwZZ/Ml83cGl3G0OjGlBO4UFQCCa5QlBPz2pY+ZvSnoeUvMJw0vmL4JU6g4vbpIW5H4qSq1xv9h8naAfg==
+"@types/jest-diff@*":
+  version "20.0.1"
+  resolved "https://registry.yarnpkg.com/@types/jest-diff/-/jest-diff-20.0.1.tgz#35cc15b9c4f30a18ef21852e255fdb02f6d59b89"
+  integrity sha512-yALhelO3i0hqZwhjtcr6dYyaLoCHbAMshwtj6cGxTvHZAKXHsYGdff6E8EPw3xLKY0ELUTQ69Q1rQiJENnccMA==
+
+"@types/jest@24.0.4":
+  version "24.0.4"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-24.0.4.tgz#9e91eeebd464536a2f57043fb50da29a91d1271d"
+  integrity sha512-7PbnoOkfxpvmPehi8hf/JapEc3nwQi2hOs3cB5SsiBiPcniT0ejrbjjEIY4bPsXlEYFuS/RiN/jpA6hrcbOokA==
+  dependencies:
+    "@types/jest-diff" "*"
 
 "@types/jquery@*":
   version "3.3.29"
@@ -224,10 +231,10 @@
   dependencies:
     "@types/lodash" "*"
 
-"@types/lodash.get@4.4.4":
-  version "4.4.4"
-  resolved "https://registry.npmjs.org/@types/lodash.get/-/lodash.get-4.4.4.tgz#34b67841594e4ddc8853341d65e971a38cb4e2f0"
-  integrity sha512-6igkhtKoWAEvTWCgd5uubiuxXLUY/kljQOQZV1G5Y7SrivpmCU+NWG5tGLgRBkccobrDljbJYzBM2vgCG4Oc8Q==
+"@types/lodash.get@4.4.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@types/lodash.get/-/lodash.get-4.4.5.tgz#a835251b005cf87582deb68ba0f147df51321bc3"
+  integrity sha512-gjvAbIWxqI4/firiT6kp4ftctvRz4Lm9FdgL+mDhd6IVh6AJpmY1LkJlEFvIyDX0aL7u3xuUQQMpklF6erNl7A==
   dependencies:
     "@types/lodash" "*"
 
@@ -6240,10 +6247,10 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-lint-staged@8.1.3:
-  version "8.1.3"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-8.1.3.tgz#bb069db5466c0fe16710216e633a84f2b362fa60"
-  integrity sha512-6TGkikL1B+6mIOuSNq2TV6oP21IhPMnV8q0cf9oYZ296ArTVNcbFh1l1pfVOHHbBIYLlziWNsQ2q45/ffmJ4AA==
+lint-staged@8.1.4:
+  version "8.1.4"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-8.1.4.tgz#a726592c0e55231116af295e730643bb711c169b"
+  integrity sha512-oFbbhB/VzN8B3i/sIdb9gMfngGArI6jIfxSn+WPdQb2Ni3GJeS6T4j5VriSbQfxfMuYoQlMHOoFt+lfcWV0HfA==
   dependencies:
     "@iamstarkov/listr-update-renderer" "0.4.1"
     chalk "^2.3.1"
@@ -6258,7 +6265,7 @@ lint-staged@8.1.3:
     is-glob "^4.0.0"
     is-windows "^1.0.2"
     listr "^0.14.2"
-    lodash "^4.17.5"
+    lodash "^4.17.11"
     log-symbols "^2.2.0"
     micromatch "^3.1.8"
     npm-which "^3.0.1"
