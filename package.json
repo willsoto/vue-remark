@@ -31,7 +31,7 @@
     "raw-loader": "1.0.0",
     "remark-shortcodes": "0.2.1",
     "rimraf": "2.6.3",
-    "rollup": "1.1.2",
+    "rollup": "1.2.0",
     "rollup-plugin-commonjs": "9.2.0",
     "rollup-plugin-filesize": "6.0.1",
     "rollup-plugin-typescript": "1.0.0",
