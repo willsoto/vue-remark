@@ -403,13 +403,13 @@
     globby "^9.0.0"
     webpack ">=4 < 4.29"
 
-"@vue/cli-plugin-typescript@3.4.0":
-  version "3.4.0"
-  resolved "https://registry.npmjs.org/@vue/cli-plugin-typescript/-/cli-plugin-typescript-3.4.0.tgz#a74f00a30bb253726a9d02e59fd6779853f764e8"
-  integrity sha512-VjNlHghaDEFheXg89C+RxPaYGKebst14/C2oVxHNeuzVO2SG6ac2LRJl0KM6eKKUD+QFj0/NJWrJZKmSgpHO9Q==
+"@vue/cli-plugin-typescript@3.4.1":
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-typescript/-/cli-plugin-typescript-3.4.1.tgz#bb64ead2dc859da32555160e4680ecb252ab7152"
+  integrity sha512-OAlS4RLikwvhyFsUrwBMMPpQTSU2vp2DvES/Nk4sZcERoB5pXB6W1jk/lC51OyreBSj9jzqO6u0X3kke1xI9Dg==
   dependencies:
     "@types/webpack-env" "^1.13.6"
-    "@vue/cli-shared-utils" "^3.4.0"
+    "@vue/cli-shared-utils" "^3.4.1"
     fork-ts-checker-webpack-plugin "^0.5.2"
     globby "^9.0.0"
     ts-loader "^5.3.3"
@@ -490,6 +490,24 @@
   version "3.4.0"
   resolved "https://registry.npmjs.org/@vue/cli-shared-utils/-/cli-shared-utils-3.4.0.tgz#4331cb926351e399bf7305a9306bf09d0f2a1b9d"
   integrity sha512-w9j2qIroUUC2ym4Lb0lLMdlGmYThhwV0OizOEVigB5eZOEUEBV2Mv43K+nWJ6OyRBACnvhJTDi1gIwJo8zUvOw==
+  dependencies:
+    chalk "^2.4.1"
+    execa "^1.0.0"
+    joi "^14.3.0"
+    launch-editor "^2.2.1"
+    lru-cache "^5.1.1"
+    node-ipc "^9.1.1"
+    opn "^5.3.0"
+    ora "^3.0.0"
+    request "^2.87.0"
+    request-promise-native "^1.0.5"
+    semver "^5.5.0"
+    string.prototype.padstart "^3.0.0"
+
+"@vue/cli-shared-utils@^3.4.1":
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-3.4.1.tgz#963454d2d2bc549d027c8988666c939903be6d7e"
+  integrity sha512-IbAQP1J48+q1ChjcHGnE06SdcCEeO77BERcPapjqZl3qJ6aPnq7z8VrNrZxo6oOnBJm7elGOvz4kJ6hirK9aPA==
   dependencies:
     chalk "^2.4.1"
     execa "^1.0.0"
