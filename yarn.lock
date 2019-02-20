@@ -9029,10 +9029,10 @@ rollup-plugin-typescript@1.0.0:
     resolve "^1.8.1"
     rollup-pluginutils "^2.3.1"
 
-rollup-plugin-vue@4.7.1:
-  version "4.7.1"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-vue/-/rollup-plugin-vue-4.7.1.tgz#73c6795c4328593e92b5e3cd3d28ea10896270bd"
-  integrity sha512-zegQMEgt5Mb3/lG7Nu5g+OXGKGW9KNltj3XjW4jVAiaVIyIlYTYsHK+k42S9//xhUoqvd7b4Fki5dGQJB+fdsg==
+rollup-plugin-vue@4.7.2:
+  version "4.7.2"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-vue/-/rollup-plugin-vue-4.7.2.tgz#463a49815def829d4d731e2227f9ffaebb9bb517"
+  integrity sha512-RuAK+YTL81/iccOWoadqQz2TXqOogivjbvtCuU6EfVP9/E5XIjuMNVsVWHkSelZQblI1z2b5tshWL7XoiOfABQ==
   dependencies:
     "@vue/component-compiler" "^3.6"
     "@vue/component-compiler-utils" "^2.1.0"
