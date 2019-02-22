@@ -14,11 +14,11 @@
     "@types/lodash.flatmap": "4.5.5",
     "@types/lodash.get": "4.4.5",
     "@typescript-eslint/parser": "1.4.0",
-    "@vue/cli-plugin-e2e-cypress": "3.4.0",
+    "@vue/cli-plugin-e2e-cypress": "3.4.1",
     "@vue/cli-plugin-eslint": "3.4.1",
-    "@vue/cli-plugin-typescript": "3.4.0",
-    "@vue/cli-plugin-unit-jest": "3.4.0",
-    "@vue/cli-service": "3.4.0",
+    "@vue/cli-plugin-typescript": "3.4.1",
+    "@vue/cli-plugin-unit-jest": "3.4.1",
+    "@vue/cli-service": "3.4.1",
     "@vue/eslint-config-prettier": "4.0.1",
     "@vue/eslint-config-typescript": "4.0.0",
     "@vue/test-utils": "1.0.0-beta.29",
@@ -39,9 +39,9 @@
     "standard-version": "5.0.0",
     "ts-jest": "24.0.0",
     "tslib": "1.9.3",
-    "typescript": "3.3.1",
-    "vue": "2.6.6",
-    "vue-template-compiler": "2.6.6"
+    "typescript": "3.3.3333",
+    "vue": "2.6.7",
+    "vue-template-compiler": "2.6.7"
   },
   "eslintConfig": {
     "env": {
