@@ -409,17 +409,17 @@
     eslint "^4.19.1"
     eslint-plugin-vue "^4.7.1"
 
-"@vue/cli-plugin-typescript@~3.4.1":
-  version "3.4.1"
-  resolved "https://registry.npmjs.org/@vue/cli-plugin-typescript/-/cli-plugin-typescript-3.4.1.tgz#bb64ead2dc859da32555160e4680ecb252ab7152"
-  integrity sha512-OAlS4RLikwvhyFsUrwBMMPpQTSU2vp2DvES/Nk4sZcERoB5pXB6W1jk/lC51OyreBSj9jzqO6u0X3kke1xI9Dg==
+"@vue/cli-plugin-typescript@~3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-typescript/-/cli-plugin-typescript-3.5.0.tgz#43c18b250b62d769f4551ce12175c54ecb540fbf"
+  integrity sha512-z/4uo+f5PVNjj5hushRLSF3F56ZDK2d86G1Dy5n7DvsZhTe8sLzu86575V1Az696LvI/HXV440t8RXl5Isss2Q==
   dependencies:
     "@types/webpack-env" "^1.13.6"
-    "@vue/cli-shared-utils" "^3.4.1"
+    "@vue/cli-shared-utils" "^3.5.0"
     fork-ts-checker-webpack-plugin "^0.5.2"
     globby "^9.0.0"
     ts-loader "^5.3.3"
-    tslint "^5.12.1"
+    tslint "^5.13.0"
     webpack ">=4 < 4.29"
 
 "@vue/cli-plugin-unit-jest@~3.4.1":
@@ -508,6 +508,24 @@
     ora "^3.0.0"
     request "^2.87.0"
     request-promise-native "^1.0.5"
+    semver "^5.5.0"
+    string.prototype.padstart "^3.0.0"
+
+"@vue/cli-shared-utils@^3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-3.5.0.tgz#95b97e13e32c14d5a0ab62322796a615752e843a"
+  integrity sha512-+EIwVMTjdfRQVEtcIhpRjNsPB2ZlopiUktlPpx6oLQdlJXwBWkFQVwuXdXHtPYxB5Kzs3VPyUfhHxnPIbNw1+Q==
+  dependencies:
+    chalk "^2.4.1"
+    execa "^1.0.0"
+    joi "^14.3.0"
+    launch-editor "^2.2.1"
+    lru-cache "^5.1.1"
+    node-ipc "^9.1.1"
+    opn "^5.3.0"
+    ora "^3.1.0"
+    request "^2.87.0"
+    request-promise-native "^1.0.7"
     semver "^5.5.0"
     string.prototype.padstart "^3.0.0"
 
@@ -9048,6 +9066,13 @@ request-promise-core@1.1.1:
   dependencies:
     lodash "^4.13.1"
 
+request-promise-core@1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/request-promise-core/-/request-promise-core-1.1.2.tgz#339f6aababcafdb31c799ff158700336301d3346"
+  integrity sha512-UHYyq1MO8GsefGEt7EprS8UrXsm1TxEvFUX1IMTuSLU2Rh7fTIdFtl8xD7JiEYiWU2dl+NYAjCTksTehQUxPag==
+  dependencies:
+    lodash "^4.17.11"
+
 request-promise-native@^1.0.5:
   version "1.0.5"
   resolved "https://registry.npmjs.org/request-promise-native/-/request-promise-native-1.0.5.tgz#5281770f68e0c9719e5163fd3fab482215f4fda5"
@@ -9056,6 +9081,15 @@ request-promise-native@^1.0.5:
     request-promise-core "1.1.1"
     stealthy-require "^1.1.0"
     tough-cookie ">=2.3.3"
+
+request-promise-native@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/request-promise-native/-/request-promise-native-1.0.7.tgz#a49868a624bdea5069f1251d0a836e0d89aa2c59"
+  integrity sha512-rIMnbBdgNViL37nZ1b3L/VfPOpSi0TqVDQPAvO6U14lMzOLrt5nilxCQqtDKhZeDiW0/hkCXGoQjhgJd/tCh6w==
+  dependencies:
+    request-promise-core "1.1.2"
+    stealthy-require "^1.1.1"
+    tough-cookie "^2.3.3"
 
 request@2.87.0:
   version "2.87.0"
@@ -9893,7 +9927,7 @@ statuses@~1.4.0:
   resolved "https://registry.npmjs.org/statuses/-/statuses-1.4.0.tgz#bb73d446da2796106efcc1b601a253d6c46bd087"
   integrity sha512-zhSCtt8v2NDrRlPQpCNtw/heZLtfUDqxBM1udqikb/Hbk52LK4nQSwr10u77iopCW5LsyHpuXS0GnEc48mLeew==
 
-stealthy-require@^1.1.0:
+stealthy-require@^1.1.0, stealthy-require@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
@@ -10443,9 +10477,9 @@ tough-cookie@>=2.3.3:
     psl "^1.1.28"
     punycode "^2.1.1"
 
-tough-cookie@^2.3.4:
+tough-cookie@^2.3.3, tough-cookie@^2.3.4:
   version "2.5.0"
-  resolved "https://registry.npmjs.org/tough-cookie/-/tough-cookie-2.5.0.tgz#cd9fb2a0aa1d5a12b473bd9fb96fa3dcff65ade2"
+  resolved "https://registry.yarnpkg.com/tough-cookie/-/tough-cookie-2.5.0.tgz#cd9fb2a0aa1d5a12b473bd9fb96fa3dcff65ade2"
   integrity sha512-nlLsUzgm1kfLXSXfRZMc1KLAugd4hqJHDTvc2hDIwS3mZAfMEuMbc03SujMF+GEcpaX/qboeycw6iO8JwVv2+g==
   dependencies:
     psl "^1.1.28"
@@ -10554,10 +10588,10 @@ tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0, tslib@~1.9.3:
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
   integrity sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ==
 
-tslint@^5.12.1:
-  version "5.12.1"
-  resolved "https://registry.npmjs.org/tslint/-/tslint-5.12.1.tgz#8cec9d454cf8a1de9b0a26d7bdbad6de362e52c1"
-  integrity sha512-sfodBHOucFg6egff8d1BvuofoOQ/nOeYNfbp7LDlKBcLNrL3lmS5zoiDGyOMdT7YsEXAwWpTdAHwOGOc8eRZAw==
+tslint@^5.13.0:
+  version "5.13.1"
+  resolved "https://registry.yarnpkg.com/tslint/-/tslint-5.13.1.tgz#fbc0541c425647a33cd9108ce4fd4cd18d7904ed"
+  integrity sha512-fplQqb2miLbcPhyHoMV4FU9PtNRbgmm/zI5d3SZwwmJQM6V0eodju+hplpyfhLWpmwrDNfNYU57uYRb8s0zZoQ==
   dependencies:
     babel-code-frame "^6.22.0"
     builtin-modules "^1.1.1"
@@ -10567,6 +10601,7 @@ tslint@^5.12.1:
     glob "^7.1.1"
     js-yaml "^3.7.0"
     minimatch "^3.0.4"
+    mkdirp "^0.5.1"
     resolve "^1.3.2"
     semver "^5.3.0"
     tslib "^1.8.0"
