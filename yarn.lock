@@ -386,14 +386,14 @@
   resolved "https://registry.yarnpkg.com/@vue/cli-overlay/-/cli-overlay-3.5.0.tgz#25a61ec5bf56bef6dca12eb0382a57af7b647d5e"
   integrity sha512-jjvJkhBE0mVAZjRyW/PXuy+ywTTRbVCZKN8WYcBN44BuKUYgBfLIUc29hUDmm/CesIZW5xMtPlFSWzRkz5uKcQ==
 
-"@vue/cli-plugin-e2e-cypress@~3.4.1":
-  version "3.4.1"
-  resolved "https://registry.npmjs.org/@vue/cli-plugin-e2e-cypress/-/cli-plugin-e2e-cypress-3.4.1.tgz#287512a57e9320876a5545e8107d256063776bbc"
-  integrity sha512-TWUg/HCalAxHtQNr7up14/TFf7EcOaRKwtirPJXb7FyeWWjiOa3qYkE/gfxVqOs5YZ787S7luYjjHZPfSKU26g==
+"@vue/cli-plugin-e2e-cypress@~3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-e2e-cypress/-/cli-plugin-e2e-cypress-3.5.0.tgz#bd30e46942bcfd95d9884c263e77264f2edffe0d"
+  integrity sha512-fdhQ+qjtV+jOqTJcspAIYybf5ftkDXrcs9Vf6UHmzxgZ6FRL2Xj1u9A5S7QkWbNe50LK1QwIT2MyKWR3teNSQg==
   dependencies:
-    "@vue/cli-shared-utils" "^3.4.1"
+    "@vue/cli-shared-utils" "^3.5.0"
     cypress "^3.1.5"
-    eslint-plugin-cypress "^2.2.0"
+    eslint-plugin-cypress "^2.2.1"
 
 "@vue/cli-plugin-eslint@~3.5.0":
   version "3.5.0"
@@ -422,12 +422,12 @@
     tslint "^5.13.0"
     webpack ">=4 < 4.29"
 
-"@vue/cli-plugin-unit-jest@~3.4.1":
-  version "3.4.1"
-  resolved "https://registry.npmjs.org/@vue/cli-plugin-unit-jest/-/cli-plugin-unit-jest-3.4.1.tgz#56e2394473af35667e18e453a14257586b6d2967"
-  integrity sha512-jrSppcswfMV59zZrZCjpXb9Zdm+cKSl1exZ4vH9/zXVu9G4Q2Qo0wo9YcuROBLLFQORdsDlZpTvhjkQ/E4DZ4A==
+"@vue/cli-plugin-unit-jest@~3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-unit-jest/-/cli-plugin-unit-jest-3.5.0.tgz#55065b19c2c68f31528622d9f7cddfc3bb360555"
+  integrity sha512-JFKiuLil1ayzTZCYk1DgoUFYb0F3nfbdVH3C7CN39EOfNgvEMvtavgS2Pb6MU+xx1f2J71bwVHQYY0HIx8zWJw==
   dependencies:
-    "@vue/cli-shared-utils" "^3.4.1"
+    "@vue/cli-shared-utils" "^3.5.0"
     babel-jest "^23.6.0"
     babel-plugin-transform-es2015-modules-commonjs "^6.26.2"
     jest "^23.6.0"
@@ -3569,10 +3569,10 @@ eslint-loader@^2.1.2:
     object-hash "^1.1.4"
     rimraf "^2.6.1"
 
-eslint-plugin-cypress@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/eslint-plugin-cypress/-/eslint-plugin-cypress-2.2.0.tgz#31f23bec82eb4078711b374af66af3daa9fdbd2e"
-  integrity sha512-Xk1DMXPfnSChpNhQPw8E9lfRUse9nSyPccxMbKlOuwCmTm2fhyNQWfulDr9DDgUL1Xetdub5lnYQkKniHjNbYw==
+eslint-plugin-cypress@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-cypress/-/eslint-plugin-cypress-2.2.1.tgz#17295d8ef76984fe05886c7c5830ba216c1f9717"
+  integrity sha512-WkH81MEALKhnpeRo/wWHBHR883LdkS8aFzbGAGFxiwRwik2IKBZxb/JrxbiA6+SZskXGcmdEi6rwL7xmiqo9MA==
   dependencies:
     globals "^11.0.1"
 
@@ -9965,7 +9965,7 @@ statuses@~1.4.0:
 
 stealthy-require@^1.1.0, stealthy-require@^1.1.1:
   version "1.1.1"
-  resolved "https://registry.npmjs.org/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
+  resolved "https://registry.yarnpkg.com/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 
 stream-browserify@^2.0.1:
