@@ -19,8 +19,8 @@ describe(VueRemarkListItem.name, () => {
         }
       }
     ]
-  ])("%s", (_, options) => {
-    const wrapper = mount(VueRemarkListItem, options);
+  ])("%s", (...args) => {
+    const wrapper = mount(VueRemarkListItem, args[1]);
 
     expect(wrapper).toMatchSnapshot();
   });
