@@ -35,7 +35,7 @@
     "rollup-plugin-commonjs": "~9.3.4",
     "rollup-plugin-filesize": "~6.0.1",
     "rollup-plugin-typescript": "~1.0.1",
-    "rollup-plugin-vue": "~4.7.2",
+    "rollup-plugin-vue": "~5.0.0",
     "standard-version": "~5.0.2",
     "ts-jest": "~24.0.2",
     "tslib": "~1.9.3",
