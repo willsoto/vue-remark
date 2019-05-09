@@ -7,7 +7,7 @@
     "lodash.get": "~4.4.2",
     "remark-parse": "~6.0.3",
     "unified": "~7.1.0",
-    "vue-class-component": "~7.0.2"
+    "vue-class-component": "~7.1.0"
   },
   "devDependencies": {
     "@types/jest": "~24.0.12",
