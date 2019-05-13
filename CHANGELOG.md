@@ -1,6 +1,21 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [0.5.0](https://github.com/willsoto/vue-remark/compare/v0.4.0...v0.5.0) (2019-05-13)
+
+
+### Bug Fixes
+
+* **package:** add main and module to package.json ([a9af88e](https://github.com/willsoto/vue-remark/commit/a9af88e)), closes [#86](https://github.com/willsoto/vue-remark/issues/86)
+* **package:** update vue-class-component to version 7.1.0 ([eef6838](https://github.com/willsoto/vue-remark/commit/eef6838))
+
+
+### Features
+
+* **package:** update dependencies ([ae8576d](https://github.com/willsoto/vue-remark/commit/ae8576d)), closes [#62](https://github.com/willsoto/vue-remark/issues/62) [#64](https://github.com/willsoto/vue-remark/issues/64)
+
+
 
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/willsoto/vue-remark/compare/v0.3.2...v0.4.0) (2019-02-03)
