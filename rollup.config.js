@@ -4,7 +4,7 @@ const commonjs = require("rollup-plugin-commonjs");
 const vue = require("rollup-plugin-vue");
 const pkg = require("./package.json");
 
-const formats = ["umd", "esm", "cjs"];
+const formats = ["umd", "esm"];
 const globals = {
   "lodash.flatmap": "flatMap",
   "lodash.get": "get",

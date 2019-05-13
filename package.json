@@ -102,6 +102,8 @@
       "git add"
     ]
   },
+  "main": "./dist/VueRemark.umd.js",
+  "module": "./dist/VueRemark.esm.js",
   "name": "@willsoto/vue-remark",
   "peerDependencies": {
     "vue": ">=2.5.22"
