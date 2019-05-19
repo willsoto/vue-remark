@@ -127,5 +127,9 @@
     "typings": "tsc --project tsconfig.build.json --declaration --declarationDir typings --emitDeclarationOnly"
   },
   "typings": "./typings/vue-remark.d.ts",
-  "version": "0.5.0"
+  "version": "0.5.0",
+  "volta": {
+    "node": "10.15.3",
+    "yarn": "1.16.0"
+  }
 }
