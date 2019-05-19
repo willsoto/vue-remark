@@ -3,11 +3,11 @@
 </template>
 
 <script lang="ts">
-import Vue, { CreateElement, VNode } from "vue";
-import Component from "vue-class-component";
+import Vue, { CreateElement, VNode } from 'vue';
+import Component from 'vue-class-component';
 
 @Component({
-  name: "custom-shortcode",
+  name: 'custom-shortcode',
   props: {
     node: {
       type: Object,

@@ -1,8 +1,8 @@
-import VueRemarkHtml from "@/renderers/html.vue";
-import { mount } from "@vue/test-utils";
+import VueRemarkHtml from '@/renderers/html.vue';
+import { mount } from '@vue/test-utils';
 
 describe(VueRemarkHtml.name, () => {
-  test("snapshot", () => {
+  test('snapshot', () => {
     const wrapper = mount(VueRemarkHtml, {
       propsData: {
         position: {

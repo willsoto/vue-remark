@@ -1,14 +1,14 @@
-import VueRemarkHeading from "@/renderers/heading.vue";
-import { mount } from "@vue/test-utils";
+import VueRemarkHeading from '@/renderers/heading.vue';
+import { mount } from '@vue/test-utils';
 
 describe(VueRemarkHeading.name, () => {
-  test("snapshot", () => {
+  test('snapshot', () => {
     const wrapper = mount(VueRemarkHeading, {
       propsData: {
         depth: 2
       },
       slots: {
-        default: "Heading 2"
+        default: 'Heading 2'
       }
     });
 

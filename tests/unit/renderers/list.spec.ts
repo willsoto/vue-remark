@@ -1,8 +1,8 @@
-import VueRemarkList from "@/renderers/list.vue";
-import { mount } from "@vue/test-utils";
+import VueRemarkList from '@/renderers/list.vue';
+import { mount } from '@vue/test-utils';
 
 describe(VueRemarkList.name, () => {
-  test("snapshot (unordered)", () => {
+  test('snapshot (unordered)', () => {
     const wrapper = mount(VueRemarkList, {
       propsData: {
         ordered: false
@@ -15,7 +15,7 @@ describe(VueRemarkList.name, () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  test("snapshot (ordered)", () => {
+  test('snapshot (ordered)', () => {
     const wrapper = mount(VueRemarkList, {
       propsData: {
         ordered: true
