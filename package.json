@@ -28,7 +28,7 @@
     "eslint-plugin-vue": "~5.2.2",
     "lint-staged": "~8.2.0",
     "prettier": "~1.18.2",
-    "raw-loader": "~2.0.0",
+    "raw-loader": "~3.0.0",
     "remark-shortcodes": "~0.2.1",
     "rimraf": "~2.6.3",
     "rollup": "~1.14.6",
