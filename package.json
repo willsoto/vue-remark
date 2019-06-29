@@ -25,7 +25,7 @@
     "babel-eslint": "~10.0.2",
     "eslint": "~5.16.0",
     "eslint-plugin-prettier": "~3.1.0",
-    "eslint-plugin-vue": "~5.2.2",
+    "eslint-plugin-vue": "~5.2.3",
     "lint-staged": "~8.2.1",
     "prettier": "~1.18.2",
     "raw-loader": "~3.0.0",
