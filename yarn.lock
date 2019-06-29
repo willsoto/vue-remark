@@ -9434,10 +9434,10 @@ rollup-plugin-typescript@~1.0.1:
     resolve "^1.10.0"
     rollup-pluginutils "^2.5.0"
 
-rollup-plugin-vue@~5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-vue/-/rollup-plugin-vue-5.0.0.tgz#9c60d3224cd7b0ad1b1a9222582662c822ab8f85"
-  integrity sha512-Yz1iq8PCzfsUnVg4Jv9pj2m88j+Y9/Mc8nai3QYCVl/3sMpLuHR+QV8Qf6+FaCvt2KaP6kJSyQvAnWdn1YFRTQ==
+rollup-plugin-vue@~5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-vue/-/rollup-plugin-vue-5.0.1.tgz#1d634db033b7c628886c7a84a7d1cd444aafe983"
+  integrity sha512-1fOKOXbQicev1/GV0WtM9cOu7Bi582pgucrXeapc5eHgh45NnLRg4Qyl7I2LsazrT2yiuZGzDYOg3DCjoOqYOQ==
   dependencies:
     "@vue/component-compiler" "^4.0.0"
     "@vue/component-compiler-utils" "^3.0.0"
@@ -9447,17 +9447,9 @@ rollup-plugin-vue@~5.0.0:
     querystring "^0.2.0"
     rollup-pluginutils "^2.4.1"
     source-map "0.7.3"
-    vue-runtime-helpers "1.0.0"
+    vue-runtime-helpers "1.0.1"
 
-rollup-pluginutils@^2.4.1, rollup-pluginutils@^2.5.0:
-  version "2.6.0"
-  resolved "https://registry.npmjs.org/rollup-pluginutils/-/rollup-pluginutils-2.6.0.tgz#203706edd43dfafeaebc355d7351119402fc83ad"
-  integrity sha512-aGQwspEF8oPKvg37u3p7h0cYNwmJR1sCBMZGZ5b9qy8HGtETknqjzcxrDRrcAnJNXN18lBH4Q9vZYth/p4n8jQ==
-  dependencies:
-    estree-walker "^0.6.0"
-    micromatch "^3.1.10"
-
-rollup-pluginutils@^2.7.0:
+rollup-pluginutils@^2.4.1, rollup-pluginutils@^2.5.0, rollup-pluginutils@^2.7.0:
   version "2.7.1"
   resolved "https://registry.npmjs.org/rollup-pluginutils/-/rollup-pluginutils-2.7.1.tgz#a7915ce8b12c177364784bf38a1590cc6c2c8250"
   integrity sha512-3nRf3buQGR9qz/IsSzhZAJyoK663kzseps8itkYHr+Z7ESuaffEPfgRinxbCRA0pf0gzLqkNKkSb8aNVTq75NA==
@@ -11235,10 +11227,10 @@ vue-loader@^15.7.0:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-runtime-helpers@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/vue-runtime-helpers/-/vue-runtime-helpers-1.0.0.tgz#af5fe1c8d727beb680b2eb9d791c8e022342e54d"
-  integrity sha512-DgwCNgIXkq1GJsWwtFOjA/K2nxpjyon/QqAut0EiwrMHBatAPbfdqksDdRoK15b5YrSJRa59rx3pc0L6V4udUA==
+vue-runtime-helpers@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/vue-runtime-helpers/-/vue-runtime-helpers-1.0.1.tgz#9a7f527d43fdecf83638188fb0e5bae699c2b5bb"
+  integrity sha512-yodqdAWt/QrUkb51jN2DS4dtF4vQWg5YejYdBAcHIOi6kBoGLRVEDz5NYGdh5IhzLrElgi+eKX1DQJmj3bCuJw==
 
 vue-style-loader@^4.1.0:
   version "4.1.2"
