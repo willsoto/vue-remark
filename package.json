@@ -33,7 +33,7 @@
     "rimraf": "~2.6.3",
     "rollup": "~1.19.4",
     "rollup-plugin-commonjs": "~10.0.2",
-    "rollup-plugin-filesize": "~6.1.1",
+    "rollup-plugin-filesize": "~6.2.0",
     "rollup-plugin-typescript": "~1.0.1",
     "rollup-plugin-vue": "~5.0.1",
     "standard-version": "~7.0.0",
