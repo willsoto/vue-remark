@@ -18,7 +18,7 @@ jobs:
           yarn lint
         env:
           CI: true
-          NOD_ENV: "production"
+          NODE_ENV: "production"
 
   tests:
     name: "Tests"
@@ -29,6 +29,9 @@ jobs:
         with:
           node-version: "10.x"
       - name: "Test"
+        env:
+          CI: true
+          NODE_ENV: "test"
         run: |
           yarn install
           yarn test:unit --coverage
