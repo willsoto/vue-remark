@@ -11,11 +11,12 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "10.x"
-      - name: install, build and lint
+      - name: "Build, Lint and Typings"
         run: |
           yarn install
           yarn build
           yarn lint
+          yarn typings
         env:
           CI: true
           NODE_ENV: "production"

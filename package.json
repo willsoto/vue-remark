@@ -10,7 +10,7 @@
     "typings"
   ],
   "scripts": {
-    "prebuild": "yarn lint && rimraf dist",
+    "prebuild": "rimraf dist",
     "build": "rollup --config rollup.config.js",
     "lint": "vue-cli-service lint",
     "prerelease": "yarn build && yarn typings",
