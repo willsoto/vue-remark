@@ -1,12 +1,12 @@
-import VueRemarkRoot from '@/renderers/root.vue';
-import { mount } from '@vue/test-utils';
+import VueRemarkRoot from "@/renderers/root.vue";
+import { mount } from "@vue/test-utils";
 
 describe(VueRemarkRoot.name, () => {
-  test('snapshot', () => {
+  test("snapshot", () => {
     const wrapper = mount(VueRemarkRoot, {
       slots: {
-        default: 'something'
-      }
+        default: "something",
+      },
     });
 
     expect(wrapper).toMatchSnapshot();

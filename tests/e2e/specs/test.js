@@ -1,9 +1,9 @@
-describe('Renders markdown', () => {
+describe("Renders markdown", () => {
   beforeEach(() => {
-    cy.visit('/');
+    cy.visit("/");
   });
 
-  it('h1', () => {
-    cy.contains('h1', 'h1 Heading');
+  it("h1", () => {
+    cy.contains("h1", "h1 Heading");
   });
 });

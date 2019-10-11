@@ -1,25 +1,25 @@
-import VueRemarkListItem from '@/renderers/list-item.vue';
-import { mount } from '@vue/test-utils';
+import VueRemarkListItem from "@/renderers/list-item.vue";
+import { mount } from "@vue/test-utils";
 
 describe(VueRemarkListItem.name, () => {
   test.each([
     [
-      'when checkboxes',
+      "when checkboxes",
       {
         propsData: {
-          checked: true
-        }
-      }
+          checked: true,
+        },
+      },
     ],
     [
-      'when regular list items',
+      "when regular list items",
       {
         propsData: {
-          checked: null
-        }
-      }
-    ]
-  ])('%s', (...args) => {
+          checked: null,
+        },
+      },
+    ],
+  ])("%s", (...args) => {
     const wrapper = mount(VueRemarkListItem, args[1]);
 
     expect(wrapper).toMatchSnapshot();
