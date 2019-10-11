@@ -4,7 +4,6 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -12,16 +11,29 @@ jobs:
         node-version: [10.x, 12.x]
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: install, build and lint
-      run: |
-        npm install -g yarn
-        yarn install
-        yarn build
-        yarn lint
-      env:
-        CI: true
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: install, build and lint
+        run: |
+          npm install -g yarn
+          yarn install
+          yarn build
+          yarn lint
+        env:
+          CI: true
+          NOD_ENV: 'production'
+      - name: unit tests
+        uses: bartlett705/npm-cy@6fa505d818d66409f91d1f42e3b15d50a0cc4886
+        run: |
+          npm install -g yarn
+          yarn install
+          yarn test:unit --coverage
+      - name: e2e tests
+        uses: bartlett705/npm-cy@6fa505d818d66409f91d1f42e3b15d50a0cc4886
+        run: |
+          npm install -g yarn
+          yarn install
+          yarn test:e2e --headless
