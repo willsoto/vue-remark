@@ -10,33 +10,33 @@
 </template>
 
 <script lang="ts">
-import Vue, { VueConstructor } from 'vue';
+import Vue, { VueConstructor } from "vue";
 
-import example from './example.md';
-import VueRemark from '../lib/vue-remark';
-import Shortcode from './shortcode.vue';
+import example from "./example.md";
+import VueRemark from "../lib/vue-remark";
+import Shortcode from "./shortcode.vue";
 
 export default Vue.extend({
-  name: 'app',
+  name: "app",
   components: {
-    VueRemark
+    VueRemark,
   },
   data() {
     return {
       source: example,
       plugins: [
         [
-          require('remark-shortcodes'),
+          require("remark-shortcodes"),
           {
-            startBlock: '{{>',
-            endBlock: '<}}'
-          }
-        ]
+            startBlock: "{{>",
+            endBlock: "<}}",
+          },
+        ],
       ],
       renderers: {
-        shortcode: Shortcode
-      }
+        shortcode: Shortcode,
+      },
     };
-  }
+  },
 });
 </script>
