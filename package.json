@@ -1,13 +1,37 @@
 {
-  "browserslist": [
-    "> 20%"
+  "name": "@willsoto/vue-remark",
+  "license": "Apache-2.0",
+  "version": "0.5.0",
+  "main": "./dist/VueRemark.umd.js",
+  "module": "./dist/VueRemark.esm.js",
+  "files": [
+    "dist",
+    "lib",
+    "typings"
   ],
+  "scripts": {
+    "prebuild": "yarn lint && rimraf dist",
+    "build": "rollup --config rollup.config.js",
+    "lint": "vue-cli-service lint",
+    "prerelease": "yarn build && yarn typings",
+    "release": "standard-version --sign",
+    "postrelease": "git push --follow-tags origin master",
+    "serve": "vue-cli-service serve",
+    "start": "yarn serve",
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit",
+    "typings": "tsc --project tsconfig.build.json --declaration --declarationDir typings --emitDeclarationOnly"
+  },
+  "typings": "./typings/vue-remark.d.ts",
   "dependencies": {
     "lodash.flatmap": "~4.5.0",
     "lodash.get": "~4.4.2",
     "remark-parse": "~7.0.1",
     "unified": "~7.1.0",
     "vue-class-component": "~7.1.0"
+  },
+  "peerDependencies": {
+    "vue": ">=2.5.22"
   },
   "devDependencies": {
     "@types/jest": "~24.0.18",
@@ -28,6 +52,7 @@
     "eslint-plugin-vue": "~5.2.3",
     "lint-staged": "~9.4.1",
     "prettier": "~1.18.2",
+    "prettier-package-json": "~2.1.0",
     "raw-loader": "~3.1.0",
     "remark-shortcodes": "~0.2.1",
     "rimraf": "~3.0.0",
@@ -43,6 +68,9 @@
     "vue": "~2.6.8",
     "vue-template-compiler": "~2.6.10"
   },
+  "browserslist": [
+    "> 20%"
+  ],
   "eslintConfig": {
     "env": {
       "node": true
@@ -58,11 +86,6 @@
     "root": true,
     "rules": {}
   },
-  "files": [
-    "lib",
-    "dist",
-    "typings"
-  ],
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
@@ -91,7 +114,6 @@
       "^.+\\.vue$": "vue-jest"
     }
   },
-  "license": "Apache-2.0",
   "lint-staged": {
     "*.js": [
       "vue-cli-service lint",
@@ -100,36 +122,19 @@
     "*.vue": [
       "vue-cli-service lint",
       "git add"
+    ],
+    "package.json": [
+      "prettier-package-json --write",
+      "git add"
     ]
-  },
-  "main": "./dist/VueRemark.umd.js",
-  "module": "./dist/VueRemark.esm.js",
-  "name": "@willsoto/vue-remark",
-  "peerDependencies": {
-    "vue": ">=2.5.22"
   },
   "postcss": {
     "plugins": {
       "autoprefixer": {}
     }
   },
-  "scripts": {
-    "build": "rollup --config rollup.config.js",
-    "lint": "vue-cli-service lint",
-    "postrelease": "git push --follow-tags origin master",
-    "prebuild": "yarn lint && rimraf dist",
-    "prerelease": "yarn build && yarn typings",
-    "release": "standard-version --sign",
-    "serve": "vue-cli-service serve",
-    "start": "yarn serve",
-    "test:e2e": "vue-cli-service test:e2e",
-    "test:unit": "vue-cli-service test:unit",
-    "typings": "tsc --project tsconfig.build.json --declaration --declarationDir typings --emitDeclarationOnly"
-  },
-  "typings": "./typings/vue-remark.d.ts",
-  "version": "0.5.0",
   "volta": {
-    "node": "10.15.3",
+    "node": "10.16.3",
     "yarn": "1.16.0"
   }
 }
