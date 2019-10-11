@@ -1,4 +1,4 @@
-name: Node CI
+name: CI
 
 on: [push]
 
@@ -20,8 +20,8 @@ jobs:
           CI: true
           NODE_ENV: "production"
 
-  tests:
-    name: "Tests"
+  test:
+    name: "Test"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
