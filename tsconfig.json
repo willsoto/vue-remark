@@ -15,8 +15,7 @@
     },
     "sourceMap": true,
     "strict": true,
-    "target": "es5",
-    "types": ["webpack-env", "jest"]
+    "target": "es6"
   },
   "exclude": ["node_modules"],
   "include": [
