@@ -33,5 +33,5 @@ export const defaultRenderers: Renderers = {
   tableHead: "thead",
   tableRow: "tr",
   text: VueRemarkText,
-  thematicBreak: "hr"
+  thematicBreak: "hr",
 };

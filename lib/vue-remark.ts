@@ -11,20 +11,20 @@ import { Node, Renderers } from "./types";
   props: {
     source: {
       type: String,
-      required: true
+      required: true,
     },
     plugins: {
       type: Array,
       required: false,
       default() {
         return [];
-      }
+      },
     },
     renderers: {
       type: Object,
-      required: false
-    }
-  }
+      required: false,
+    },
+  },
 })
 export default class VueRemark extends Vue {
   parser: unified.Processor = unified();
@@ -41,7 +41,7 @@ export default class VueRemark extends Vue {
   get mergedRenderers(): Renderers {
     return {
       ...defaultRenderers,
-      ...this.renderers
+      ...this.renderers,
     };
   }
 
@@ -69,7 +69,7 @@ export default class VueRemark extends Vue {
 
     return astToVNode(createElement, this.ast, {
       definitions,
-      renderers: this.mergedRenderers
+      renderers: this.mergedRenderers,
     });
   }
 }

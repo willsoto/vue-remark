@@ -123,6 +123,10 @@
       "vue-cli-service lint",
       "git add"
     ],
+    "*.{js,vue,yaml,yml}": [
+      "prettier --write",
+      "git add"
+    ],
     "package.json": [
       "prettier-package-json --write",
       "git add"

@@ -7,7 +7,7 @@ import {
   NodeDataAndChildren,
   Options,
   Parent,
-  Renderer
+  Renderer,
 } from "./types";
 
 export function astToVNode(
@@ -15,16 +15,14 @@ export function astToVNode(
   node: Node,
   options: Options,
   parent?: Parent,
-  index = 0
+  index = 0,
 ): VNode {
   const renderer = options.renderers[node.type];
   const rendererType = typeof renderer;
 
   if (rendererType !== "string" && rendererType !== "function") {
     throw new Error(
-      `Invalid renderer for ${
-        node.type
-      }. Expected string or function got ${rendererType}`
+      `Invalid renderer for ${node.type}. Expected string or function got ${rendererType}`,
     );
   }
 
@@ -36,7 +34,7 @@ export function astToVNode(
     options,
     renderer,
     parent,
-    index
+    index,
   );
 
   return createElement(renderer, nodeData, children || resolveChildren());
@@ -51,9 +49,9 @@ export function astToVNode(
           options,
           {
             node,
-            nodeData
+            nodeData,
           },
-          idx
+          idx,
         );
       })
     );
@@ -62,7 +60,7 @@ export function astToVNode(
 
 export function getDefinitions(
   node: Node,
-  defs: Definitions = {}
+  defs: Definitions = {},
 ): Definitions {
   const children: Node[] = node.children || [];
 
@@ -70,7 +68,7 @@ export function getDefinitions(
     if (child.type === "definition" && child.identifier) {
       definitions[child.identifier] = {
         href: child.url as string,
-        title: child.title as string
+        title: child.title as string,
       };
     }
 
@@ -85,7 +83,7 @@ function getNodeData(
   options: Options,
   renderer: Renderer,
   parent?: Parent,
-  index = 0
+  index = 0,
 ): NodeDataAndChildren {
   const definition = node.identifier
     ? options.definitions[node.identifier]
@@ -93,9 +91,9 @@ function getNodeData(
   const nodeData: any = {
     key,
     props: {
-      value: node.value
+      value: node.value,
     },
-    attrs: {}
+    attrs: {},
   };
   let children: VNode[] | undefined = undefined;
 
@@ -147,9 +145,9 @@ function getNodeData(
           options,
           {
             node,
-            nodeData
+            nodeData,
           },
-          idx
+          idx,
         );
       });
       break;
@@ -173,7 +171,7 @@ function getNodeData(
       nodeData.props.columnAlignment = get(parent, [
         "nodeData",
         "props",
-        "columnAlignment"
+        "columnAlignment",
       ]);
       break;
     case "tableCell":
@@ -182,7 +180,7 @@ function getNodeData(
         "nodeData",
         "props",
         "columnAlignment",
-        index
+        index,
       ]);
       break;
     default:
@@ -192,7 +190,7 @@ function getNodeData(
 
   return {
     nodeData,
-    children
+    children,
   };
 }
 
