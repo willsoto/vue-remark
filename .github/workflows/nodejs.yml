@@ -12,14 +12,13 @@ jobs:
         with:
           node-version: "10.x"
       - name: "Build, Lint and Typings"
+        env:
+          CI: true
         run: |
           yarn install
           yarn build
           yarn lint
           yarn typings
-        env:
-          CI: true
-          NODE_ENV: "production"
 
   test:
     name: "Test"
