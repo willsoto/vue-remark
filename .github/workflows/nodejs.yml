@@ -4,13 +4,13 @@ on: [push]
 
 jobs:
   build:
+    name: "Build"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
         with:
-          node-version: '10.x'
+          node-version: "10.x"
       - name: install, build and lint
         run: |
           yarn install
@@ -18,32 +18,19 @@ jobs:
           yarn lint
         env:
           CI: true
-          NOD_ENV: 'production'
+          NOD_ENV: "production"
 
-  unit-tests:
+  tests:
+    name: "Tests"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
         with:
-          node-version: '10.x'
-      - name: unit tests
+          node-version: "10.x"
+      - name: "Test"
         uses: bartlett705/npm-cy@6fa505d818d66409f91d1f42e3b15d50a0cc4886
         run: |
           yarn install
           yarn test:unit --coverage
-
-  e2e-tests:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: '10.x'
-      - name: e2e tests
-        uses: bartlett705/npm-cy@6fa505d818d66409f91d1f42e3b15d50a0cc4886
-        run: |
-          yarn install
           yarn test:e2e --headless
