@@ -801,15 +801,15 @@
     webpack "^4.0.0"
     yorkie "^2.0.0"
 
-"@vue/cli-plugin-unit-jest@~4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-unit-jest/-/cli-plugin-unit-jest-4.0.0.tgz#a412841fac9f65a1e70d4ccc5c6617d7ab7e73cc"
-  integrity sha512-5O4uV/UUthO8PzUrNwlviKNrqWTOjmY/mfoAWarl7XMnvLpadOOOiwgn2BUHoztIx6qfzBxVrk2aSNHSO9gR4g==
+"@vue/cli-plugin-unit-jest@~4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-unit-jest/-/cli-plugin-unit-jest-4.0.3.tgz#8fa7a5b280325ddb9455104985c719c44768d370"
+  integrity sha512-7IAIJNJK+VJzaEVb9rStR/E9ga3cQKuthwz1wDFJUHyXNP3fuVQ0H6WuMLRs0c2QdEtV+zoWBpQwr++jf6PXJQ==
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/plugin-transform-modules-commonjs" "^7.4.4"
     "@types/jest" "^24.0.18"
-    "@vue/cli-shared-utils" "^4.0.0"
+    "@vue/cli-shared-utils" "^4.0.3"
     babel-core "^7.0.0-bridge.0"
     babel-jest "^24.9.0"
     babel-plugin-transform-es2015-modules-commonjs "^6.26.2"
@@ -890,7 +890,7 @@
     webpack-dev-server "^3.4.1"
     webpack-merge "^4.2.1"
 
-"@vue/cli-shared-utils@^4.0.0", "@vue/cli-shared-utils@^4.0.3":
+"@vue/cli-shared-utils@^4.0.3":
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-4.0.3.tgz#10cc29e8caa3f14cffc0416ddf804cf4d10197b9"
   integrity sha512-MqNg13fDCfzPmj83Wx8115dlGcvpLXGxL0ZFI+0UgO6kpR+RHvjE/yVpr0a/yW5XqQidUZFN6nY2WaA28wGI+Q==
