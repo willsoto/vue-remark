@@ -787,13 +787,13 @@
   dependencies:
     "@vue/cli-shared-utils" "^4.0.3"
 
-"@vue/cli-plugin-typescript@~4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-typescript/-/cli-plugin-typescript-4.0.0.tgz#0b9c0ae98276645f8794956fc827c58a31fec49a"
-  integrity sha512-7iWEDRGf2paMl4R3I8pMsqLNLmx0rSCgrJN51GD5DDw8i9ZPNzB5ZFy+ycJywcefZwsIGr1eZE9Q00TbrsAKyg==
+"@vue/cli-plugin-typescript@~4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-typescript/-/cli-plugin-typescript-4.0.3.tgz#aba19a0f0e0aae605b0178de996544830631a4b8"
+  integrity sha512-o7gZN7n0s+2mEcQBt5sUUPN8EM+70BNZsC3H/d5NrbevjBRFIWmZDS0pLVdnDzeHLg6IfuAC0OaQZvd/5l+umQ==
   dependencies:
     "@types/webpack-env" "^1.13.9"
-    "@vue/cli-shared-utils" "^4.0.0"
+    "@vue/cli-shared-utils" "^4.0.3"
     fork-ts-checker-webpack-plugin "^1.3.4"
     globby "^9.2.0"
     ts-loader "^6.0.1"
