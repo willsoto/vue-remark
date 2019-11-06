@@ -64,7 +64,7 @@
     "standard-version": "~7.0.0",
     "ts-jest": "~24.1.0",
     "tslib": "~1.10.0",
-    "typescript": "~3.6.4",
+    "typescript": "~3.7.2",
     "vue": "~2.6.8",
     "vue-template-compiler": "~2.6.10"
   },
