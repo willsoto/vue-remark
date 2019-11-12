@@ -15,13 +15,13 @@ import Unist from "unist";
       required: false,
       default() {
         return {};
-      }
+      },
     },
     value: {
       type: String,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 })
 export default class VueRemarkHtml extends Vue {
   position!: Unist.Position;

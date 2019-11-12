@@ -13,13 +13,13 @@ import Component from "vue-class-component";
   props: {
     ordered: {
       type: Boolean,
-      required: true
+      required: true,
     },
     start: {
       type: Number,
-      required: false
-    }
-  }
+      required: false,
+    },
+  },
 })
 export default class VueRemarkList extends Vue {
   ordered!: boolean;

@@ -13,13 +13,13 @@ import Component from "vue-class-component";
   props: {
     lang: {
       type: String,
-      required: false
+      required: false,
     },
     value: {
       type: String,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 })
 export default class VueRemarkCodeBlock extends Vue {
   lang!: string;

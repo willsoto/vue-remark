@@ -11,9 +11,9 @@ import Component from "vue-class-component";
   props: {
     value: {
       type: String,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 })
 export default class VueRemarkInlineCode extends Vue {}
 </script>

@@ -13,9 +13,9 @@ import Component from "vue-class-component";
   props: {
     depth: {
       type: Number,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 })
 export default class VueRemarkHeading extends Vue {
   depth!: number;

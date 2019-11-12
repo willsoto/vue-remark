@@ -7,9 +7,9 @@ import Component from "vue-class-component";
   props: {
     value: {
       type: String,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 })
 export default class VueRemarkText extends Vue {
   value!: string;

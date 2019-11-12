@@ -14,13 +14,13 @@ import Component from "vue-class-component";
   props: {
     checked: {
       type: Boolean,
-      required: false
+      required: false,
     },
     loose: {
       type: Boolean,
-      required: false
-    }
-  }
+      required: false,
+    },
+  },
 })
 export default class VueRemarkListItem extends Vue {
   checked!: boolean | null;

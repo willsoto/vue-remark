@@ -9,7 +9,7 @@ import Vue from "vue";
 import Component from "vue-class-component";
 
 @Component({
-  name: "vue-remark-root"
+  name: "vue-remark-root",
 })
 export default class VueRemarkRoot extends Vue {}
 </script>
