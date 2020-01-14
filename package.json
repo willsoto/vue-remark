@@ -28,7 +28,7 @@
     "lodash.get": "4.4.2",
     "remark-parse": "7.0.2",
     "unified": "8.4.2",
-    "vue-class-component": "7.2.1"
+    "vue-class-component": "7.2.2"
   },
   "peerDependencies": {
     "vue": ">=2.5.22"
