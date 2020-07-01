@@ -59,7 +59,7 @@
     "rimraf": "3.0.2",
     "rollup": "2.18.1",
     "rollup-plugin-commonjs": "10.1.0",
-    "rollup-plugin-filesize": "9.0.1",
+    "rollup-plugin-filesize": "9.0.2",
     "rollup-plugin-typescript": "1.0.1",
     "rollup-plugin-vue": "5.1.9",
     "standard-version": "8.0.0",
