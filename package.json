@@ -27,7 +27,7 @@
     "lodash.flatmap": "4.5.0",
     "lodash.get": "4.4.2",
     "remark-parse": "8.0.3",
-    "unified": "9.0.0",
+    "unified": "9.1.0",
     "vue-class-component": "7.2.4"
   },
   "peerDependencies": {
