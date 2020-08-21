@@ -66,8 +66,8 @@
     "ts-jest": "26.2.0",
     "tslib": "2.0.1",
     "typescript": "3.9.7",
-    "vue": "2.6.11",
-    "vue-template-compiler": "2.6.11"
+    "vue": "2.6.12",
+    "vue-template-compiler": "2.6.12"
   },
   "browserslist": [
     "> 20%"
