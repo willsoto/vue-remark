@@ -63,7 +63,7 @@
     "rollup-plugin-typescript": "1.0.1",
     "rollup-plugin-vue": "5.1.9",
     "standard-version": "9.0.0",
-    "ts-jest": "26.2.0",
+    "ts-jest": "26.3.0",
     "tslib": "2.0.1",
     "typescript": "3.9.7",
     "vue": "2.6.12",
