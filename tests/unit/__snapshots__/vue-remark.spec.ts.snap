@@ -32,52 +32,64 @@ exports[`VueRemark snapshot 1`] = `
   <p>Unordered</p>
   <ul>
     <li>
-      <!----> Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li>
+      <!----> Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code>
+    </li>
     <li>
       <!----> Sub-lists are made by indenting 2 spaces:<ul>
         <li>
           <!----> Marker character change forces new list start:<ul>
             <li>
-              <!----> Ac tristique libero volutpat at</li>
+              <!----> Ac tristique libero volutpat at
+            </li>
           </ul>
           <ul>
             <li>
-              <!----> Facilisis in pretium nisl aliquet</li>
+              <!----> Facilisis in pretium nisl aliquet
+            </li>
           </ul>
           <ul>
             <li>
-              <!----> Nulla volutpat aliquam velit</li>
+              <!----> Nulla volutpat aliquam velit
+            </li>
           </ul>
         </li>
       </ul>
     </li>
     <li>
-      <!----> Very easy!</li>
+      <!----> Very easy!
+    </li>
   </ul>
   <p>Ordered</p>
   <ol start="1">
     <li>
-      <!----> Lorem ipsum dolor sit amet</li>
+      <!----> Lorem ipsum dolor sit amet
+    </li>
     <li>
-      <!----> Consectetur adipiscing elit</li>
+      <!----> Consectetur adipiscing elit
+    </li>
     <li>
-      <!----> Integer molestie lorem at massa</li>
+      <!----> Integer molestie lorem at massa
+    </li>
   </ol>
   <p>1) You can use sequential numbers...
     1) ...or keep all the numbers as <code>1.</code></p>
   <p>Start numbering with offset:</p>
   <ol start="57">
     <li>
-      <!----> foo</li>
+      <!----> foo
+    </li>
     <li>
-      <!----> bar</li>
+      <!----> bar
+    </li>
   </ol>
   <p>Loose lists?</p>
   <ul>
     <li>
-      <!----> foo</li>
+      <!----> foo
+    </li>
     <li>
-      <!----> bar</li>
+      <!----> bar
+    </li>
   </ul>
   <p>Checkboxes</p>
   <ul>
@@ -149,7 +161,8 @@ console.log(foo(5));</code>
   <!---->
   <h2>Images</h2>
   <p><img src="https://espen.codes/assets/projects/react-markdown/320x180.png" alt="React Markdown">
-    <img title="Mead, on-the-fly image transformer" src="https://espen.codes/assets/projects/mead/320x180.png" alt="Mead"></p>
+    <img title="Mead, on-the-fly image transformer" src="https://espen.codes/assets/projects/mead/320x180.png" alt="Mead">
+  </p>
   <p>Like links, Images also have a footnote style syntax</p>
   <p><img title="Headless CMS" src="https://public.sanity.io/modell_@2x.png" alt="Alt text"></p>
   <p>With a reference later in the document defining the URL location:</p>
