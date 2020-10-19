@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0](https://github.com/willsoto/vue-remark/compare/v0.5.0...v0.6.0) (2020-10-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* More packages are required now for baseline to work. Bumping for safety
+
+Signed-off-by: Will Soto <willsoto@users.noreply.github.com>
+
+### Features
+
+* upgrade all packages ([2f43586](https://github.com/willsoto/vue-remark/commit/2f435867b0b13313bf7998ad21359096790dafb4))
+* upgrade to remark-parse v9 ([3d934bf](https://github.com/willsoto/vue-remark/commit/3d934bf3d1b01d3b4dcda9eb3aacd830fa99d5c3))
+* **github:** add github actions ([d4f0630](https://github.com/willsoto/vue-remark/commit/d4f06305c27a769a78c4b3a53281a66b5e10f336))
+* **package:** update dependencies ([26e76dd](https://github.com/willsoto/vue-remark/commit/26e76ddeae7f433fb99ded19f51e9d7d628d5625)), closes [#88](https://github.com/willsoto/vue-remark/issues/88)
+* **workflows:** add Node CI ([5c7c145](https://github.com/willsoto/vue-remark/commit/5c7c145ecd36a281015a0c996886444b157af271))
+* **workflows:** add testing ([d08abc5](https://github.com/willsoto/vue-remark/commit/d08abc562d4af8605eeb63ba0bb148ed86637ab5))
+
+
+### Bug Fixes
+
+* install @typescript-eslint/eslint-plugin ([360df3c](https://github.com/willsoto/vue-remark/commit/360df3ccbdd463544bc7b69870b8d7431f4492c0))
+* keep prebuild task to clean only ([e079ad8](https://github.com/willsoto/vue-remark/commit/e079ad88970246d2429f9b957a2c01ce0ff6ce2c))
+* **tsconfig:** enable nodejs typings ([eb99631](https://github.com/willsoto/vue-remark/commit/eb9963190e9db9e7e3238098cc59fedd8fb8b696))
+* **workflows:** remove excess uses ([9f79f72](https://github.com/willsoto/vue-remark/commit/9f79f72c45f8c3e5cf6c4b6369281f0bc5a9a9e0))
+* **workflows:** remove NODE_ENV ([84775cf](https://github.com/willsoto/vue-remark/commit/84775cfb23cf2b34ffeaad8c910a94ceb20a0c97))
+
 ## [0.5.0](https://github.com/willsoto/vue-remark/compare/v0.4.0...v0.5.0) (2019-05-13)
 
 
