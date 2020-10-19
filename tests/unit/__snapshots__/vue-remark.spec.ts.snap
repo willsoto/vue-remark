@@ -71,8 +71,14 @@ exports[`VueRemark snapshot 1`] = `
       <!----> Integer molestie lorem at massa
     </li>
   </ol>
-  <p>1) You can use sequential numbers...
-    1) ...or keep all the numbers as <code>1.</code></p>
+  <ol start="1">
+    <li>
+      <!----> You can use sequential numbers...
+    </li>
+    <li>
+      <!----> ...or keep all the numbers as <code>1.</code>
+    </li>
+  </ol>
   <p>Start numbering with offset:</p>
   <ol start="57">
     <li>

@@ -3,7 +3,6 @@
     <vue-remark
       class="testing"
       :source="source"
-      :plugins="plugins"
       :renderers="renderers"
     ></vue-remark>
   </div>
@@ -14,7 +13,7 @@ import Vue, { VueConstructor } from "vue";
 
 import example from "./example.md";
 import VueRemark from "../lib/vue-remark";
-import Shortcode from "./shortcode.vue";
+// import Shortcode from "./shortcode.vue";
 
 export default Vue.extend({
   name: "app",
@@ -24,18 +23,20 @@ export default Vue.extend({
   data() {
     return {
       source: example,
-      plugins: [
-        [
-          require("remark-shortcodes"),
-          {
-            startBlock: "{{>",
-            endBlock: "<}}",
-          },
-        ],
-      ],
-      renderers: {
-        shortcode: Shortcode,
-      },
+      // plugins: [
+      //   [
+      //     // require("remark-shortcodes"),
+      //     // {
+      //     //   startBlock: "{{>",
+      //     //   endBlock: "<}}",
+      //     // },
+      //   ],
+      // ],
+      // not working right now
+      // https://github.com/djm/remark-shortcodes/issues/19
+      // renderers: {
+      //   shortcode: Shortcode,
+      // },
     };
   },
 });

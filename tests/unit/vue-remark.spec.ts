@@ -21,7 +21,8 @@ describe(VueRemark.name, () => {
   });
 
   describe("when providing plugins and renderers", () => {
-    test("correctly applies them", () => {
+    // Disabled due to https://github.com/djm/remark-shortcodes/issues/19
+    test.skip("correctly applies them", () => {
       const wrapper = mount(VueRemark, {
         propsData: {
           source: [

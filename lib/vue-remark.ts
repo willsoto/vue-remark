@@ -1,4 +1,6 @@
-import markdown from "remark-parse";
+import stringify from "rehype-stringify";
+import gfm from "remark-gfm";
+import parse from "remark-parse";
 import unified from "unified";
 import Vue, { CreateElement, VNode } from "vue";
 import Component from "vue-class-component";
@@ -31,7 +33,7 @@ export default class VueRemark extends Vue {
 
   // props
   source!: string;
-  plugins!: unified.PluginTuple[];
+  plugins!: unified.Plugin[];
   renderers!: Renderers;
 
   get ast(): Node {
@@ -50,7 +52,7 @@ export default class VueRemark extends Vue {
   }
 
   private initializePlugins(): void {
-    const plugins = [markdown].concat(this.plugins);
+    const plugins = [parse, gfm, stringify].concat(this.plugins);
 
     plugins.forEach((plugin) => {
       if (Array.isArray(plugin)) {
