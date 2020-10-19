@@ -17,7 +17,7 @@
     "lint": "vue-cli-service lint",
     "prerelease": "npm run build",
     "release": "standard-version --sign",
-    "postrelease": "git push --follow-tags origin master",
+    "postrelease": "git push --follow-tags origin main",
     "serve": "vue-cli-service serve",
     "start": "npm run serve",
     "test": "npm run test:unit && npm run test:e2e -- --headless",
