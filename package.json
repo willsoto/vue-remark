@@ -108,7 +108,7 @@
     "lint-staged": "~10.4.2",
     "prettier": "~2.1.2",
     "prettier-plugin-organize-imports": "~1.1.1",
-    "prettier-plugin-packagejson": "~2.2.6",
+    "prettier-plugin-packagejson": "~2.2.7",
     "raw-loader": "~4.0.2",
     "remark-shortcodes": "~0.3.1",
     "rimraf": "~3.0.2",
