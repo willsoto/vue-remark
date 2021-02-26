@@ -83,7 +83,7 @@
     "rehype-stringify": "~8.0.0",
     "remark-gfm": "~1.0.0",
     "remark-parse": "~9.0.0",
-    "unified": "~9.2.0",
+    "unified": "~9.2.1",
     "vue-class-component": "~7.2.6"
   },
   "devDependencies": {
