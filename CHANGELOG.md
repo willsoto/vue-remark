@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/willsoto/vue-remark/compare/v0.6.0...v1.0.0) (2021-03-30)
+
+
+### Bug Fixes
+
+* **package:** use main branch for postrelease ([20a71fa](https://github.com/willsoto/vue-remark/commit/20a71fad1ce5d13d773fd5739a614983a6002017))
+
 ## [0.6.0](https://github.com/willsoto/vue-remark/compare/v0.5.0...v0.6.0) (2020-10-19)
 
 
